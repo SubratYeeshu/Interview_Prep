@@ -1,41 +1,65 @@
+# Finding all subarray
+
+## Method 1 : 
+
+Time Complexity : O(N \* 3)
+Space Complexity : O(N \* 2)
+
 ```cpp
-int main()
-{
-    // O(N^3)
-    vector<int> v = {1, 2, 3, 4, 5};
+vector<vector<int>> generateSubarrays(vector<int> v){
     vector<vector<int>> sub;
-    // for(int i = 0 ; i < 5 ; i++){
-    //     for(int j = i ; j < 5 ; j++){
-    //         vector<int> level;
-    //         for(int k = i ; k < j ; k++){
-    //             level.push_back(v[k]);
-    //         }
-    //         if(level.size() != 0)sub.push_back(level);
-    //     }
-    // }
-    // for(auto i : sub){
-    //     for(auto j : i){
-    //         cout << j << " ";
-    //     }
-    //     cout << endl;
-    // }
-    
-    // O(N^2)
-    for(int i = 0 ; i < 5 ; i++){
-        vector<int> level;
-        for(int j = i ; j < 5 ; j++){
-            level.push_back(v[j]);
-            sub.push_back(level);
+    int n = v.size();
+
+    // Generating subarray
+    for(int i = 0 ; i < n ; i++){
+        for(int j = i ; j < n ; j++){
+            vector<int> level;
+            for(int k = i ; k < j ; k++){
+                level.push_back(v[k]);
+            }
+            if(level.size() != 0)sub.push_back(level);
         }
     }
-    
+
+    // Printing every subarray
     for(auto i : sub){
         for(auto j : i){
             cout << j << " ";
         }
         cout << endl;
     }
+
+    return sub;
+}
+```
+
+## Method - 2 : 
+
+Time Complexity : O(N \* 3)
+Space Complexity : O(N \* 2)
+
+```cpp
+vector<vector<int>> generateSubarrays(vector<int> v){
+    int n = v.size();
+    vector<vector<int>> sub;
+
+    // Generating subarray
+    for(int i = 0 ; i < n ; i++){
+        vector<int> level;
+        for(int j = i ; j < n ; j++){
+            level.push_back(v[j]);
+            sub.push_back(level);
+        }
+    }
     
-    return 0;
+    // Printing subarray
+    for(auto i : sub){
+        for(auto j : i){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+
+    return sub;
 }
 ```

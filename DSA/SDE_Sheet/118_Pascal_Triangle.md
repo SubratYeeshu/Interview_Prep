@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-There are can be three variation to this problem
+There can be three variation to this problem
 
 ## Variation 1 : Find the element present at the give row number and coloumn number
 
@@ -32,8 +32,8 @@ void type1(int row, int col){
 
 ## Variation 2 : Generate the row with given row number
 
-Time complexity : O(M \* N \* (M + N))  
-Space complexity : O(M \* N)
+Time complexity :  Time complexity : O(N)  
+Space complexity : O(1)
 
 ```cpp
 void type2(int row){
@@ -55,7 +55,11 @@ type2(5);
 
 ## Variation 3 : Generate the whole pascal triangle
 
+Time complexity : O(N \* 2)  
+Space complexity : O(1)
+
 ```cpp
+// Generating a row O(N)
 vector<int> type3(int row){
     vector<int> generatedRow;
     generatedRow.push_back(1);
@@ -68,7 +72,7 @@ vector<int> type3(int row){
     return generatedRow;
 }
 
-
+// Generating the triangle
 vector<vector<int>> generate(int numRows) {
     vector<vector<int>> pascalTriangle;
     for(int i = 1 ; i <= numRows ; i++){
@@ -77,7 +81,10 @@ vector<vector<int>> generate(int numRows) {
 }
 ```
 
-## Variation 3 : Generate the whole pascal triangle
+## Variation 3 : Generate the whole pascal triangle 
+
+Time complexity : O(N \* 2)  
+Space complexity : O(1)
 
 ```cpp
 // Another approach
@@ -90,3 +97,4 @@ vector<vector<int>> pascalTriangle;
         pascalTriangle.push_back(tempRow);
 }
 ```
+
