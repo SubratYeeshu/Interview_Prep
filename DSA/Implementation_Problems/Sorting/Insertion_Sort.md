@@ -1,7 +1,4 @@
-# Bubble Sort
-
-Time Complexity : O(N \* 2)
-Space COmplexity : O(1)
+# Insertion Sort
 
 - Array is divided in two parts sorted and unsorted, choose first element from the unsorted part and put it into the right position in sorted part 
 
@@ -10,6 +7,11 @@ Space COmplexity : O(1)
 - Insertion sort takes the maximum time to sort if elements are sorted in reverse order. And it takes minimum time (Order of n) when elements are already sorted. 
 
 -Insertion sort is used when number of elements is small. It can also be useful when the input array is almost sorted, and only a few elements are misplaced in a complete big array.
+
+Time Complexity : O(N \* 2)
+Space COmplexity : O(1)
+
+## Code
 
 ```cpp
 void insertionSort(vector<int> &nums){

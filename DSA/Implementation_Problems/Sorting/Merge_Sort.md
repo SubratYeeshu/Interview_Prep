@@ -1,12 +1,13 @@
 # Merge Sort
 
-Time Complexity : O(N \* LogN)
-Space COmplexity : O(N)
-
 - Merge Sort is a stable sorting algorithm. We swap elements only when A is less than B. If A is equal to B, we do not swap them, hence relative order between equal elements will be maintained.
 
 - Merge sort can be usefull for parallel processing 
 
+## Code 
+
+Time Complexity : O(N \* LogN)
+Space COmplexity : O(N)
 
 ```cpp
 void merge(vector<int> &nums, int low, int mid, int high){

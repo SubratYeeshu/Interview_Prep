@@ -1,9 +1,11 @@
 # Selection Sort
 
+- The default implementation of the Selection Sort Algorithm is not stable. 
+
 Time Complexity : O(N \* 2)
 Space COmplexity : O(1)
 
-- The default implementation of the Selection Sort Algorithm is not stable. 
+## Code
 
 ```cpp
 void insertionSort(vector<int> &nums){

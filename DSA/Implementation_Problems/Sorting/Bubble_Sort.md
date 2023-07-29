@@ -1,11 +1,13 @@
 # Bubble Sort
 
-Time Complexity : O(N \* 2)
-Space COmplexity : O(1)
-
 - Bubble Sort is a stable sorting algorithm. We swap elements only when A is less than B. If A is equal to B, we do not swap them, hence relative order between equal elements will be maintained.
 
 - Bubble sort takes minimum time (Order of n) when elements are already sorted. Hence it is best to check if the array is already sorted or not beforehand, to avoid O(N2) time complexity.
+
+Time Complexity : O(N \* 2)
+Space COmplexity : O(1)
+
+## Code
 
 ```cpp
 void bubbleSort(vector<int> &nums){
