@@ -1,7 +1,6 @@
 # Finding all subarray
 
 ## Method 1 : 
-
 Time Complexity : O(N \* 3)
 Space Complexity : O(N \* 2)
 
