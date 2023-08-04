@@ -78,7 +78,7 @@ vector<vector<int>> fourSum(vector<int>& nums, int target) {
                 long long sum = 1ll*nums[i] + 1ll*nums[j] + 1ll*nums[k] + 1ll*nums[l];
                 if(sum == target){
                     res.push_back({nums[i], nums[j], nums[k], nums[l]});
-                    k++; l--;
+                    k++; l--; // Three sum differs here
                     while (k < l && nums[k] == nums[k - 1]) k++;  // Eliminating duplicates on kth pointer
                     while (k < l && nums[l] == nums[l + 1]) l--;  // Eliminating duplicates on lth pointer 
                 }else if (sum < target) k++;

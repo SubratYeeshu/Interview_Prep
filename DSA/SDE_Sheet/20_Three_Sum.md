@@ -78,7 +78,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
                     res.push_back({nums[i] , nums[j] , nums[k]});
                     while(j < k && (nums[j + 1] == nums[j]))j++;  // Eliminating duplicates on jth pointer
                     while(j < k && (nums[k - 1] == nums[k]))k--;  // Eliminating duplicates on kth pointer
-                    j++, k--;
+                    j++, k--;  // Four sum differs here
                 }
                 else if(target < sum)k--;
                 else j++;
