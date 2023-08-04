@@ -70,19 +70,17 @@ Space complexity : O(1)
 //Elements are combined and exhausted to get a potential answer then we iterate once again to confirm it
 int majorityElement(vector<int>& nums) {
     int n = nums.size();
-    int element = nums[0];
-    int count = 1;
-    for(int i = 1 ; i < n ; i++){
-        nums[i] == element ? count++ : count--;
-        if(count < 0){
-            element = nums[i];
-            count = 1;
-        }
+    int ele = -1, cnt = 0;
+    for(int i = 0 ; i < n ; i++){
+        if(nums[i] == ele)cnt++;
+        else if(cnt == 0){
+            ele = nums[i];
+            cnt = 1;
+        }else cnt--;
     }
-    //2 Pass 
-    count = 0;
-    for(int i = 0 ; i < n ; i++)if(nums[i] == element)count++;        
-    return count > n /2 ? element : 0;
+    cnt = 0;
+    for(auto i : nums)if(i == ele)cnt++;
+    return cnt >= n / 2 ? ele : -1;
 }
 ```
 
