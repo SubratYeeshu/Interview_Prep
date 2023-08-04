@@ -30,7 +30,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
 }
 ```
 
-## Approach 2 : Better
+## Approach 2 : Better 
 
 Time complexity : O(N \* N + Insertion of n triplets) 
 Space complexity : O(N)
@@ -70,14 +70,14 @@ vector<vector<int>> threeSum(vector<int>& nums) {
     sort(nums.begin(), nums.end());
     vector<vector<int>> res;
     for(int i = 0 ; i < n - 1 ; i++){
-        if(i > 0 && nums[i] == nums[i - 1])continue;    
+        if(i > 0 && nums[i] == nums[i - 1])continue;  // Eliminating duplicates on ith pointer  
         int j = i + 1, k = n - 1;
             while(j < k){
             int sum = nums[i] + nums[j] + nums[k];
                 if(sum == target){
                     res.push_back({nums[i] , nums[j] , nums[k]});
-                    while(j < k && (nums[j + 1] == nums[j]))j++;
-                    while(j < k && (nums[k - 1] == nums[k]))k--;
+                    while(j < k && (nums[j + 1] == nums[j]))j++;  // Eliminating duplicates on jth pointer
+                    while(j < k && (nums[k - 1] == nums[k]))k--;  // Eliminating duplicates on kth pointer
                     j++, k--;
                 }
                 else if(target < sum)k--;
