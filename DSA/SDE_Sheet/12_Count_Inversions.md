@@ -6,6 +6,9 @@
 
 ## Approach 1 : Merge Sort (Using Global Variable)
 
+Time complexity : O(N \* LogN) 
+Space complexity : O(N)
+
 ```cpp
 long long int cnt = 0;
 void merge(long long arr[], long long N, int i, int mid, int j){
@@ -47,6 +50,9 @@ long long getInversions(long long *arr, int n){
 ```
 
 ## Approach 2 : Merge Sort (With return statements)
+
+Time complexity : O(N \* LogN) 
+Space complexity : O(N)
 
 ```cpp
 long long merge(long long arr[], long long N, int i, int mid, int j){

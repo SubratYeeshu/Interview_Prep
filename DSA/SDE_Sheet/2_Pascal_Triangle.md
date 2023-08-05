@@ -55,7 +55,7 @@ type2(5);
 
 ## Variation 3 : Generate the whole pascal triangle
 
-Time complexity : O(N \* 2)  
+Time complexity : O(N^2)  
 Space complexity : O(1)
 
 ```cpp

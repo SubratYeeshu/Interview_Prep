@@ -32,7 +32,7 @@ vector<vector<int>> threeSum(vector<int>& nums) {
 
 ## Approach 2 : Better 
 
-Time complexity : O(N \* N + Insertion of n triplets) 
+Time complexity : O(N^2 + Insertion of n triplets) 
 Space complexity : O(N)
 
 ```cpp
