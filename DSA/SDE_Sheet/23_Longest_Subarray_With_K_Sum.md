@@ -53,6 +53,15 @@ Time complexity : O(N)
 Space complexity : O(N)
 
 ```cpp
+/*
+        _______\  (x - k)
+    ->  . . . . \ . . . . | . . .    
+        __________________|  sum = x
+        
+        if (x - k) exists
+        then in between the rest subarray does have the sum as k
+        This method can be applied to various questions with somewhat similar pattern
+*/
 int maxLen(vector<int>&A, int n, int k){   
     int sum = 0, maxi = 0;
     unordered_map<int, int> mp;
