@@ -17,7 +17,6 @@ Time complexity : O(N)
 Auxiliary space : O(N)
 
 ```cpp
-
 /*
 
     -> Similar to Longest K unique characters substring 
