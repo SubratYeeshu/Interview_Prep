@@ -76,19 +76,19 @@ int search(string p, string s) {
     int n = s.size(), k = p.size(), cnt = 0;
     vector<int>windowStringHash(26,0), patternHash(26,0);
     
-    //Edge case if patternSize is greater than stringSize
+    // Edge case if patternSize is greater than stringSize
     if(k > n) return 0;
     
-    //First Window
+    // First Window
     for(int i = 0 ; i < k ; i++){
         patternHash[p[i] - 'a']++;
         windowStringHash[s[i] - 'a']++;
     }
     
-    //Checking for first window 
+    // Checking for first window 
     if(patternHash == windowStringHash) cnt++;
 
-    //Checking for rest of the window
+    // Checking for rest of the window
     for(int i = k ; i < n ; i++){
         windowStringHash[s[i - k] - 'a']--; //Removing 
         windowStringHash[s[i] - 'a']++; //Aquiring
