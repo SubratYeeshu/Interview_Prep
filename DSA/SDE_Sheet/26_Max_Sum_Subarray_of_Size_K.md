@@ -32,21 +32,20 @@ Space complexity : O(1)
 
 ```cpp
 long maximumSumSubarray(int K, vector<int> &Arr , int N){
-      long maxi = -1, sum = 0;
-       
-      // Preparing the first window
-      for(int i = 0 ; i < K ; i++)sum += Arr[i];
-      maxi = max(maxi, sum);
-       
-      int i = 0, j = K;
-      while(j < N){
-          sum += Arr[j] - Arr[i];
-          maxi = max(maxi, sum);
-          i++, j++;
-      }
-       
-      return maxi;
+    long maxi = -1, sum = 0;
+    
+    // Preparing the first window
+    for(int i = 0 ; i < K ; i++)sum += Arr[i];
+    maxi = max(maxi, sum);
+    
+    int i = 0, j = K;
+    while(j < N){
+        sum += Arr[j] - Arr[i];
+        maxi = max(maxi, sum);
+        i++, j++;
     }
+    return maxi;
+}
 ```
 
 ## Approach 2.2 : Optimal (Fixed size Sliding Window - Template 2)
@@ -67,7 +66,6 @@ long maximumSumSubarray(int k, vector<int> &nums , int n){
         }
         j++;
     }
-    
     return maxi;
 }
 ```
