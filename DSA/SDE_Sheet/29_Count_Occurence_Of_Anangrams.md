@@ -4,42 +4,39 @@
 
 - Given a word pat and a text txt. Return the count of the occurrences of anagrams of the word in the text.
 
-## Approach 1.1 (Sliding Window with map)
+## Approach 1 (Sliding Window with map)
 
 Time complexity : O(N)
 Space complexity : O(N)
 
 ```cpp
 int search(string pat, string txt) {
-    int i=0, j=0, n = txt.size(), k = pat.size(), ans = 0;
-    unordered_map<char,int>mp;
+    int k = pat.size(), n = txt.size(), i = 0, j = 0;
+    unordered_map<char,int> freq;
     
-    if(k > n)return 0;
-    
-    for(int i = 0 ; i< k ; i++) mp[pat[i]]++;
-    int count_distinct = mp.size();
+    for(int i = 0 ; i < k ; i++)freq[pat[i]]++;
+    int count = freq.size(), ans = 0;
     
     while(j < n){
-        if(mp.find(txt[j]) != mp.end()){
-            mp[txt[j]]--;
-            if(mp[txt[j]] == 0)
-                count_distinct--;
+        if(freq.count(txt[j])){
+            freq[txt[j]]--;
+            if(freq[txt[j]] == 0)count--;
         }
         
         if(j - i + 1 < k)j++;
         else if(j - i + 1 == k){
-            if(!count_distinct)ans++;
-    
-            // Rebuilding the pattern map - 
-            if(mp.find(txt[i]) != mp.end()){
-                mp[txt[i]]++;
-                if(mp[txt[i]])count_distinct++;
+            if(count == 0)ans++;
+            
+            // Rebuilding the pattern map
+            if(freq.count(txt[i])){
+                freq[txt[i]]++;
+                if(freq[txt[i]] == 1)count++;
             }
             i++;
             j++;
         }
     }
-    return ans; 
+    return ans;
 }
 ```
 
