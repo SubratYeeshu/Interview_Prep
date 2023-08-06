@@ -80,7 +80,7 @@ int maxLen(vector<int>&A, int n, int k){
 }
 ```
 
-## Approach 4 (Sliding Window - Only for array with positives)
+## Approach 4 (Sliding Window - Only for array with positives - Variable size)
 
 Time complexity : O(N)  
 Space complexity : O(1)
