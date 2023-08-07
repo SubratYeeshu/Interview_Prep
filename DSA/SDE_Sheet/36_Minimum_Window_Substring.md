@@ -101,3 +101,23 @@ string smallestWindow (string s, string p){
     return s.substr(start, mn);
 }
 ```
+
+```cpp
+// -> Sliding window generic template (variable size)
+// -> mp.size() can be replace to count and condition can differ with differnt problems
+while(j < n){
+	*** calculation ***
+
+    if(mp.size() < k)j++;
+    else if(mp.size() == k){
+        mx = max(mx, j - i + 1);
+        j++;
+    }else if(mp.size() > k){
+        while(mp.size() > k){
+            mp[s[i]]--;
+            if(mp[s[i]] == 0)mp.erase(mp[s[i]]);
+            i++;
+        }
+        j++;
+    }
+}
