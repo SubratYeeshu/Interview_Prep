@@ -36,6 +36,26 @@ Time complexity : O(N)
 Auxiliary space : O(1)
 
 ```cpp
+/*
+
+    -> Proof
+
+        m      
+    <--------> <------------  k
+    ____________________   |
+              |        |   |
+              |   n    |   V
+              | rounds |  
+              |________|
+
+        Distance travelled by slow pointer = m + k + n*x1
+        Distance travelled by fast pointer = m + k + n*x2
+        Equation 1 : 2(m + k + n*x1) = m + k + n*x2
+        resolving : n(x1 - 2x2) - m = k
+        Putting m(n - 1) = k
+        So for some x1 and x2 there exists a real k
+
+*/
 bool findLoopUsingFloydDetection(ListNode* head){
     if(head == NULL)return false;   
     ListNode* slow = head;
