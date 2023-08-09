@@ -68,7 +68,41 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
 }
 ```
 
-## Approach 3 : Recursion
+## Approach 3 : Without using extra space (More Readable)
+
+Time complexity : O(N + M) 
+Auxiliary space : O(1) 
+
+
+```cpp
+// Updating next pointers of node using curr pointer
+ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+    if(!list1)return list2;
+    if(!list2)return list1;
+    
+    // Dummy node for easier operation
+    ListNode* dummy = new ListNode();
+    ListNode* curr = dummy;
+    
+    while(list1 && list2){
+        if(list1 -> val < list2 -> val){
+            curr -> next = list1;
+            list1 = list1 -> next;
+        }else{
+            curr -> next = list2;
+            list2 = list2 -> next;
+        }
+        curr = curr -> next;
+    }
+    
+    if(list1)curr -> next = list1;
+    if(list2)curr -> next = list2;
+    
+    return dummy -> next;
+}
+```
+
+## Approach 4 : Recursion
 
 Time complexity : O(N + M) 
 Auxiliary space : O(N + M) Recursion stack space
