@@ -44,6 +44,14 @@ Time complexity : O(N)
 Auxiliary space : O(1)
 
 ```cpp
+/*
+
+    1> Create a cross connection in the original list and the nodes of the new list.
+    2> Attach random pointers in the new nodes.
+    3> Seperate the new linked list from the original.
+
+*/
+
 // Creating a copy of the list and creating linkages (zig zag linkage and copy)
 void copyList(Node *head) {
     Node* temp = head;
