@@ -11,7 +11,7 @@ Auxiliary space : O(1)
 
 ```cpp
 int findPlatform(int arr[], int dep[], int n){
-    // sorting for secuential processing
+    // Sorting for secuential processing
     sort(arr, arr + n);
     sort(dep, dep + n);
     
