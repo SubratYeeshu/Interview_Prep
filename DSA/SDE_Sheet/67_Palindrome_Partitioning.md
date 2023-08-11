@@ -6,6 +6,10 @@
 
 ## Approach 1.1 : Recursion
 
+- Time complexity : O((2^n) \* K * (N/2)) ->  O(2^n) to generate every substring, O(N/2) Checking for palindrome. O(k) inserting it in vector
+- Space complexity : O(K \* X) -> k Avg. len of palindrome list, x such lists
+
+
 ```cpp
 bool isPalindrome(string s, int i, int j){
     while(i <= j)if(s[i++] != s[j--])return false;
@@ -38,6 +42,9 @@ vector<vector<string>> partition(string s) {
 
 
 ## Approach 1.2 : Recursion
+
+Time complexity : O((2^n) \* K * (N/2)) 
+Space complexity : O(K \* X)
 
 ```cpp
 bool isPalindrome(string &temp) {
@@ -76,6 +83,9 @@ vector<vector<string>> partition(string s) {
 ```
 
 ## Approach 1.3 : Recursion (Most readable and easy)
+
+Time complexity : O((2^n) \* K * (N/2)) 
+Space complexity : O(K \* X)
 
 ```cpp
 
