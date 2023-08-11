@@ -7,7 +7,7 @@
 ## Approach 1 : Iterative
 
 Time complexity : O(N)  
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 ListNode* reverseIterative(ListNode* head){
@@ -30,7 +30,7 @@ ListNode* reverseIterative(ListNode* head){
 ## Approach 2 : Recursive
 
 Time complexity : O(N)  
-Auxiliary space : O(N) recursive stack space
+Space complexity : O(N) recursive stack space
 
 ```cpp
 ListNode* reverseRecursive(ListNode* head){

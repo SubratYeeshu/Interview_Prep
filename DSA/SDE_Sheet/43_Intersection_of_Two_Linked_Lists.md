@@ -7,7 +7,7 @@
 ## Approach 1 : 
 
 Time complexity : O(M * N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 ListNode* intersectionPresent(ListNode* head1, ListNode* head2) {
@@ -26,7 +26,7 @@ ListNode* intersectionPresent(ListNode* head1, ListNode* head2) {
 ## Approach 2 : Hashing
 
 Time complexity : O(N + M)
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 ListNode* intersectionPresent(ListNode* head1,ListNode* head2) {
@@ -46,7 +46,7 @@ ListNode* intersectionPresent(ListNode* head1,ListNode* head2) {
 ## Approach 3 : Optimal 
 
 Time complexity : O(N + M)
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {

@@ -7,7 +7,7 @@
 ## Approach 1 : 
 
 Time complexity : O(N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 ListNode* rotateRight(ListNode* head, int k) {

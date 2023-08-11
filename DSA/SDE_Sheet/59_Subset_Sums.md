@@ -7,7 +7,7 @@
 ## Approach 1 : Generate all subsets using power set (Bit Manipulation)
 
 Time complexity : O(N \* 2<sup>N</sup>) 
-Auxiliary space : O(2<sup>N</sup>)
+Space complexity : O(2<sup>N</sup>)
 
 ```cpp
 vector<vector<int>> subsets(vector<int>& nums) {
@@ -45,7 +45,7 @@ vector<int> subsetSums(vector<int> arr, int N){
 ## Approach 2 : Recursion 
 
 Time complexity : O(2<sup>N</sup>) 
-Auxiliary space : O(2<sup>N</sup>)
+Space complexity : O(2<sup>N</sup>)
 
 ```cpp
 void solve(int index, vector<int>& arr, int sum, vector<int>& res){

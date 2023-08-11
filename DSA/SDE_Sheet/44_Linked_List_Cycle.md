@@ -7,7 +7,7 @@
 ## Approach 1 : Using map
 
 Time complexity : O(N)
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 bool findLoopUsingMap(ListNode* head){
@@ -33,7 +33,7 @@ bool findLoopUsingMap(ListNode* head){
 ## Approach 2 : Floyd's detection
 
 Time complexity : O(N)
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 /*

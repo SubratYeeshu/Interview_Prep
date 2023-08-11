@@ -38,7 +38,7 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
 ## Approach 2.1 : Single Pass (Edge case handling 1)
 
 Time complexity : O(N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 // Fast travels n distance first loop, then len - n in second loop travelled by both fast and slow
@@ -64,7 +64,7 @@ ListNode* removeNthFromEnd(ListNode* head, int n) {
 ## Approach 2.1 : Single Pass (Edge case handling 2)
 
 Time complexity : O(N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 ListNode* removeNthFromEnd(ListNode* head, int n) {        

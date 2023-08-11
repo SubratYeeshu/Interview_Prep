@@ -7,7 +7,7 @@
 ## Approach 1 
 
 Time complexity : O(N) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {

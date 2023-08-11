@@ -7,7 +7,7 @@
 ## Approach 1 : Prefix and Suffix Array (Extra space)
 
 Time complexity : O(N) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 int trap(vector<int>& height) {
@@ -28,7 +28,7 @@ int trap(vector<int>& height) {
 ## Approach 2 : Without using extra space
 
 Time complexity : O(N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 int trap(vector<int>& height) {

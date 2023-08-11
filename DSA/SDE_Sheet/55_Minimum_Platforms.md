@@ -7,7 +7,7 @@
 ## Approach 1 : Greedy
 
 Time complexity : O(N \* LogN + N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 int findPlatform(int arr[], int dep[], int n){

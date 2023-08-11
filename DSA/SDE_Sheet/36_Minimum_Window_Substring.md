@@ -7,7 +7,7 @@
 ## Approach 1.1 : Sliding window  (Variable size sliding window template)
 
 Time complexity : O(N)  
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 string minWindow(string s, string t) {
@@ -56,7 +56,7 @@ string minWindow(string s, string t) {
 ## Approach 1.2 : Sliding window  (Variable size sliding window template) - Using vector
 
 Time complexity : O(N)  
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 /*

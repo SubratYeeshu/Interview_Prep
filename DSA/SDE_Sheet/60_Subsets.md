@@ -6,7 +6,7 @@
 ## Approach 1.1 : Recursion + Backtrack (Easier to understand)
 
 Time complexity : O(2<sup>N</sup>) 
-Auxiliary space : O(2<sup>N</sup>)
+Space complexity : O(2<sup>N</sup>)
 
 ```cpp
 void solve(int index, vector<int> &nums, vector<int> &ds, vector<vector<int>> &res){
@@ -28,7 +28,7 @@ void solve(int index, vector<int> &nums, vector<int> &ds, vector<vector<int>> &r
 ## Approach 1.2 : Recursion + Backtrack
 
 Time complexity : O(2<sup>N</sup>) 
-Auxiliary space : O(2<sup>N</sup>)
+Space complexity : O(2<sup>N</sup>)
 
 ```cpp
 void solve(int index, vector<int> &nums, vector<int> &ds, vector<vector<int>> &res){
@@ -46,7 +46,7 @@ void solve(int index, vector<int> &nums, vector<int> &ds, vector<vector<int>> &r
 ## Approach 2 : Using Bit Manipulation
 
 Time complexity : O(N \* 2<sup>N</sup>) 
-Auxiliary space : O(N \* 2<sup>N</sup>) 
+Space complexity : O(N \* 2<sup>N</sup>) 
 
 ```cpp
 /*

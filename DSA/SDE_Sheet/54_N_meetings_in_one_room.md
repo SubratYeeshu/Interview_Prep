@@ -8,7 +8,7 @@
 ## Approach 1 : Using extra space
 
 Time complexity : O(N) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 class meetingInfo{

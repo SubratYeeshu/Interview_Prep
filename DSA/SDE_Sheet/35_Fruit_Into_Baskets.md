@@ -14,7 +14,7 @@ Given the integer array fruits, return the maximum number of fruits you can pick
 ## Approach 1 : Sliding window  (Variable size sliding window template)
 
 Time complexity : O(N)  
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 /*

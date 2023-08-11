@@ -11,20 +11,17 @@ Time complexity : O(2<sup>N</sup>)
 Auxiliary space : O(2<sup>N</sup>)
 
 ```cpp
-void solve(vector<int>& nums, int index, vector<vector<int>>& ans, vector<int>&ds){
-    if(index == nums.size()){
-        ans.push_back(ds);
+void solve(int index, int target, vector<vector<int>> &res, vector<int> &ds, vector<int> &nums){
+    if(index >= nums.size() && target == 0){
+        res.push_back(ds);
         return;
     }
-    //PICK
-    ds.push_back(nums[index]);
-    solve(nums, index + 1, ans, ds);
-    ds.pop_back();
+    if(index >= nums.size() || target < 0)return;
     
-    //NOT PICK
-    while(index + 1 < nums.size() && nums[index] == nums[index + 1])index++;
-    solve(nums, index + 1, ans, ds);
-            
+    ds.push_back(nums[index]);
+    solve(index, target - nums[index], res, ds, nums);
+    ds.pop_back();
+    solve(index + 1, target, res, ds, nums);
 }
 ```
 

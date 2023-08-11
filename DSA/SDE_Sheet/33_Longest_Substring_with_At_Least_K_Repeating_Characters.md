@@ -7,7 +7,7 @@
 ## Approach 1 : Recursive  
 
 Time complexity : O(N \* LogN)  
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 int longestSubstring(string s, int k) {
@@ -31,7 +31,7 @@ int longestSubstring(string s, int k) {
 ## Approach 2 : Iterative
 
 Time complexity : O(N^2)  
-Auxiliary space : O(26)
+Space complexity : O(26)
 
 ```cpp
 int longestSubstring(string s, int k) {

@@ -7,7 +7,7 @@
 ## Approach 1 : Recursion
 
 Time complexity : O(N)
-Auxiliary space : O(N / K)
+Space complexity : O(N / K)
 
 ```cpp
 void reverse(ListNode* start, ListNode* end){
@@ -46,7 +46,7 @@ ListNode* reverseKGroup(ListNode* head, int k) {
 ## Approach 2 : Iterative
 
 Time complexity : O(N)
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 void reverse(ListNode* start, ListNode* end){

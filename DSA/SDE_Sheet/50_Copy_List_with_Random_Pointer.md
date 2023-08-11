@@ -11,7 +11,7 @@ Return the head of the copied linked list. The linked list is represented in the
 ## Approach 1 : Using extra space
 
 Time complexity : O(N) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 Node* copyRandomList(Node* head) {
@@ -41,7 +41,7 @@ Node* copyRandomList(Node* head) {
 ## Approach 2 : Without using extra space
 
 Time complexity : O(N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 /*

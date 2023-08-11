@@ -7,7 +7,7 @@
 ## Approach 1 : Greedy
 
 Time complexity : O(N \* LogN + N \* M) 
-Auxiliary space : O(deadline)
+Space complexity : O(deadline)
 
 ```cpp
 // Perform job as late as possible with max profit

@@ -7,7 +7,7 @@
 ## Approach 1.1 : Sliding window  
 
 Time complexity : O(N)  
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 int lengthOfLongestSubstring(string s) {
@@ -39,7 +39,7 @@ int lengthOfLongestSubstring(string s) {
 ## Approach 1.2 : Sliding window  
 
 Time complexity : O(N) - Slightly faster 
-Auxiliary space : O(256)
+Space complexity : O(256)
 
 ```cpp
 int lengthOfLongestSubstring(string s) {
@@ -61,7 +61,7 @@ int lengthOfLongestSubstring(string s) {
 ## Approach 1.3 : Sliding window  
 
 Time complexity : O(N) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 int lengthOfLongestSubstring(string s) {

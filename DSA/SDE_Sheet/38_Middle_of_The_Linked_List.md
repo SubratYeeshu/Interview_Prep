@@ -7,7 +7,7 @@
 ## Approach 1 : Finding the length
 
 Time complexity : O(2N) Two pass
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 int getLen(ListNode* &head){
@@ -33,7 +33,7 @@ ListNode* middleNode(ListNode* head) {
 ## Approach 2 : Using fast and slow pointer
 
 Time complexity : O(N)
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 ListNode* middleNode(ListNode* head) {

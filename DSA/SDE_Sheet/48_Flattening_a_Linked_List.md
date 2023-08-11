@@ -12,7 +12,7 @@
 ## Approach 1 : Recursion
 
 Time complexity : O(N)
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 Node* mergeTwoLists(Node* list1, Node* list2) {

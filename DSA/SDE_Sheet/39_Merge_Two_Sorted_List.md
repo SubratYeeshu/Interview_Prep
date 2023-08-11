@@ -8,7 +8,7 @@
 ## Approach 1 : Using extra space
 
 Time complexity : O(N + M) 
-Auxiliary space : O(N + M)
+Space complexity : O(N + M)
 
 ```cpp
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
@@ -40,7 +40,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
 ## Approach 2 : Without using extra space
 
 Time complexity : O(N + M) 
-Auxiliary space : O(1) 
+Space complexity : O(1) 
 
 ```cpp
 ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
@@ -71,7 +71,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
 ## Approach 3 : Without using extra space (More Readable)
 
 Time complexity : O(N + M) 
-Auxiliary space : O(1) 
+Space complexity : O(1) 
 
 
 ```cpp
@@ -105,7 +105,7 @@ ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
 ## Approach 4 : Recursion
 
 Time complexity : O(N + M) 
-Auxiliary space : O(N + M) Recursion stack space
+Space complexity : O(N + M) Recursion stack space
 
 ```cpp
 ListNode* merge(ListNode* l1, ListNode* l2){

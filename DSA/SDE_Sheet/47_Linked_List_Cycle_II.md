@@ -7,7 +7,7 @@
 ## Approach 1 : Floyd's detection 
 
 Time complexity : O(N)
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 /*

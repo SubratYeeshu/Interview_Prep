@@ -11,7 +11,7 @@
 ## Approach 1 
 
 Time complexity : O(1) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 /*

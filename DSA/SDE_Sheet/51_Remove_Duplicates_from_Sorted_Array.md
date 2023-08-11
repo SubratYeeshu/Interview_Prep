@@ -9,7 +9,7 @@
 ## Approach 1 : Using set
 
 Time complexity : O(N) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 int removeDuplicates(vector<int>& nums) {
@@ -29,7 +29,7 @@ int removeDuplicates(vector<int>& nums) {
 ## Approach 2 : Using two pointers
 
 Time complexity : O(N) 
-Auxiliary space : O(1)
+Space complexity : O(1)
 
 ```cpp
 int removeDuplicates(vector<int>& nums) {

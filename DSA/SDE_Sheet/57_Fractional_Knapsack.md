@@ -8,7 +8,7 @@
 ## Approach 1.1 : 
 
 Time complexity : O(N \* LogN) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 class ItemsInfo{
@@ -55,7 +55,7 @@ double fractionalKnapsack(int W, Item arr[], int n){
 ## Approach 2 : 
 
 Time complexity : O(N \* LogN) 
-Auxiliary space : O(N)
+Space complexity : O(N)
 
 ```cpp
 double fractionalKnapsack(int W, Item arr[], int n){
