@@ -26,7 +26,7 @@ void solve(int index, int target, vector<vector<int>> &res, vector<int> &ds, vec
 }
 ```
 
-## Approach 1.1 : Recursion + Backtrack 
+## Approach 1.2 : Recursion + Backtrack 
 
 Time complexity : O(2<sup>N</sup>) 
 Auxiliary space : O(K \* X)
@@ -38,23 +38,8 @@ void solve(int index, int target, vector<vector<int>> &res, vector<int> &ds, vec
         return;
     }
     if(target < 0)return;
-    void solve(int index, int target, vector<vector<int>> &res, vector<int> &ds, vector<int> &nums) {
-        if(target == 0){
-            res.push_back(ds);
-            return;
-        }
-        if(target < 0)return;
-        // if(index >= nums.size())return;
-        /*
-        Generating All Combinations: To generate all possible combinations, you need to explore all elements in the nums array. If you have this condition, the loop will terminate prematurely once the index exceeds the array size, and you will miss considering combinations that involve elements further down the array.
-        */
-        
-        for (int i = index ; i < nums.size() ; i++) {
-            ds.push_back(nums[i]);
-            solve(i, target - nums[i], res, ds, nums);
-            ds.pop_back();
-        }
-    }
+    if(index >= nums.size())return;
+    
     for (int i = index ; i < nums.size() ; i++) {
         ds.push_back(nums[i]);
         solve(i, target - nums[i], res, ds, nums);
