@@ -6,8 +6,8 @@
 
 ## Approach 1 : Generate all subsets using power set (Bit Manipulation)
 
-Time complexity : O(N \* 2<sup>n<sup>) 
-Auxiliary space : O(2<sub>n<sup>)
+Time complexity : O(N \* 2<sup>n</sup>) 
+Auxiliary space : O(2<sup>n</sup>)
 
 ```cpp
 
@@ -15,8 +15,8 @@ Auxiliary space : O(2<sub>n<sup>)
 
 ## Approach 2 : Recursion 
 
-Time complexity : O(2<sup>n</sup>) 
-Auxiliary space : O(2<sub>n</sup>)
+Time complexity : O(2^n) 
+Auxiliary space : O(2<sup>n</sup>)
 
 ```cpp
 void solve(int index, vector<int>& arr, int sum, vector<int>& res){
