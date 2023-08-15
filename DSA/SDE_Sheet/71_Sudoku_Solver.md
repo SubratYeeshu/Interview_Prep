@@ -11,7 +11,7 @@ The '.' character indicates empty cells.
 
 ## Approach 1 : Backtracking
 
-Time complexity : O(9<sup>(N^2)</sup>) All permutations + copy
+Time complexity : O(9<sup>(N^2)</sup>) 
 Space complexity : O(rec)
 
 ```cpp
