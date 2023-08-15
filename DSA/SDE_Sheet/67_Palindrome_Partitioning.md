@@ -6,7 +6,7 @@
 
 ## Approach 1.1 : Recursion
 
-- Time complexity : O((2^n) \* K * (N/2)) ->  O(2^n) to generate every substring, O(N/2) Checking for palindrome. O(k) inserting it in vector
+- Time complexity : O((2^N) \* K * (N/2)) ->  O(2^n) to generate every substring, O(N/2) Checking for palindrome. O(k) inserting it in vector
 - Space complexity : O(K \* X) -> k Avg. len of palindrome list, x such lists
 
 
@@ -43,7 +43,7 @@ vector<vector<string>> partition(string s) {
 
 ## Approach 1.2 : Recursion
 
-Time complexity : O((2^n) \* K * (N/2)) 
+Time complexity : O((2^N) \* K * (N/2)) 
 Space complexity : O(K \* X)
 
 ```cpp
@@ -84,7 +84,7 @@ vector<vector<string>> partition(string s) {
 
 ## Approach 1.3 : Recursion (Most readable and easy)
 
-Time complexity : O((2^n) \* K * (N/2)) 
+Time complexity : O((2^N) \* K * (N/2)) 
 Space complexity : O(K \* X)
 
 ```cpp
