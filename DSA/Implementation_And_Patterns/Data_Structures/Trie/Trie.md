@@ -17,7 +17,7 @@
 - Longest Prefix Matching Algorithm(Maximum Prefix Length Match)
 - Disadvantage : The main disadvantage of the trie is that it takes a lot of memory to store all the strings
 
-## Code snippet
+## Code snippet : With root node as global
 ```cpp
 class Trie {
 public:
@@ -86,4 +86,57 @@ public:
         return true;
     }
 };
+```
+
+## Code snippet : With root passed as arguement
+```cpp
+class trie{
+    public :
+    bool isend;
+    vector< trie* > children;
+    
+    trie( ){
+        children = vector< trie* >(26,NULL);
+        isend=false;   
+    }
+};
+
+
+void insert( trie* root, string word)
+{
+    trie* temp= root;
+    for( auto x : word){
+        int index= x-'a';
+        
+        if( temp->children[index]==NULL)
+            temp->children[index]= new trie();
+        temp=temp->children[index];
+    }
+        temp->isend= true;
+    
+}
+
+    bool search( trie* root, string word)
+{
+    trie* temp= root;
+    for( auto x : word){
+        int index= x-'a';
+        
+        if( temp->children[index]==NULL)
+                return false;
+        temp=temp->children[index];
+    }
+    if(temp->isend)
+        return true;
+        return false;
+    
+}
+
+
+// Driver function
+int main(){
+    trie* root = new trie();
+    for( auto words : wordDict)insert(root,words);
+}
+
 ```
