@@ -51,7 +51,7 @@ while(j < n){
 }
 ```
 
-## Common Problems on fixed sized sliding window
+## Common Problems on variable sized sliding window
 - Largest Subarray of sum K
 - Longest K unique characters substring
 - Longest Substring Without Repeating Character
