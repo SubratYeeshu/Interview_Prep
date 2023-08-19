@@ -6,7 +6,7 @@
 
 ## Approach 1 : Extra space + Sorting
 
-Time complexity : O(N \* M) 
+Time complexity : O(NMLogNM) 
 Space complexity : O(N \* M)
 
 ```cpp
@@ -60,6 +60,30 @@ int median(vector<vector<int>> &matrix, int R, int C){
     while(low <= high){
         int mid = (low + high) / 2;
         int countLessThanMid = checkCount(mid, matrix, R, C);
+        if(countLessThanMid <= cnt_bef_and_aft)low = mid + 1;
+        else high = mid - 1;
+        
+    }
+    
+    return low;
+}
+```
+
+## Approach 3 : Upper Bound STL
+
+Time complexity : O(R * log C) : Upper bound function takes logC time.
+Space complexity : O(1)
+
+```cpp
+int median(vector<vector<int>> &matrix, int R, int C){
+    int low = 1, high = INT_MAX;
+    int cnt_bef_and_aft = (R * C) / 2;
+    
+    while(low <= high){
+        int mid = (low + high) / 2;
+        int countLessThanMid = 0;
+        for(int i = 0 ; i < R ; i++)countLessThanMid += upper_bound(matrix[i].begin(), 
+            matrix[i].end(), temp) - matrix[i].begin();
         if(countLessThanMid <= cnt_bef_and_aft)low = mid + 1;
         else high = mid - 1;
         
