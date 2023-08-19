@@ -593,9 +593,12 @@ int main(){
     
     // Lower bound
     cout << "************************** Lower Bound STL **************************" << endl;
-    // If element found returs the iterator of first occurence
+
+    // This returns the element iteself if present the first occurence 
     cout << *lower_bound(temp.begin(), temp.end(), 12) << endl;
     cout << *lower_bound(temp.begin(), temp.end(), 50) << endl;
+
+    // If element found returns the iterator of first occurence
     cout << lower_bound(temp.begin(), temp.end(), 50) - temp.begin() << endl;
     cout << "The count of 50 is : " << upper_bound(temp.begin(), temp.end(), 50) - lower_bound(temp.begin(), temp.end(), 50);
 }
