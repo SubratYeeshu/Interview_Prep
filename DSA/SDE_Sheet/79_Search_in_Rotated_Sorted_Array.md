@@ -61,7 +61,7 @@ int search(vector<int>& nums, int target) {
 }
 ```
 
-## Approach 2 : Binary Search (Single Pass)
+## Approach 2 : Binary Search (Single Pass) - Optimal
 
 Time complexity : O(LogN) 
 Space complexity : O(1)

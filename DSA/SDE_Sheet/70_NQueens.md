@@ -37,8 +37,17 @@ vector<vector<string>> solveNQueens(int n) {
     vector<vector<string>> res;
     
     // Creating empty board
-    vector<string> board (n, string(n, '.'));
+    // vector<string> board (n, string(n, '.'));
         
+    vector<string> board;
+    for(int i = 0 ; i < n ; i++){
+        string str = "";
+        for(int j = 0 ; j < n ; j++){
+            str.push_back('.');
+        }
+        board.push_back(str);
+    }
+    
     // Solve helper function
     solve(0, board, res);
     
