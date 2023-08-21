@@ -22,7 +22,7 @@ pair<int, int> firstAndLastPosition(vector<int>& arr, int n, int k) {
 }
 ```
 
-## Approach 2 : Upper Bound / Lower Bound STL
+## Approach 2.1 : Upper Bound / Lower Bound STL
 
 Time complexity : O(LogN) 
 Space complexity : O(1)
@@ -36,6 +36,31 @@ vector<int> searchRange(vector<int>& nums, int target) {
         res[0] = lower_bound(nums.begin(), nums.end(), target) - nums.begin();
         res[1] = upper_bound(nums.begin(), nums.end(), target) - nums.begin() - 1;
     }
+    
+    return res;
+}
+```
+
+## Approach 2.2 : Upper Bound / Lower Bound STL
+
+Time complexity : O(LogN) 
+Space complexity : O(1)
+
+```cpp
+vector<int> searchRange(vector<int>& nums, int target) {
+    int n = nums.size();
+    vector<int> res {-1, -1};
+    
+    auto firstOccurence = lower_bound(nums.begin(), nums.end(), target);
+    
+    if(firstOccurence == nums.end())return res;
+    int firstIndex = firstOccurence - nums.begin();
+    if(nums[firstIndex] != target)return res;
+    
+    res[0] = firstIndex;
+    res[1] = upper_bound(nums.begin(), nums.end(), target) - nums.begin() - 1;
+    
+
     
     return res;
 }

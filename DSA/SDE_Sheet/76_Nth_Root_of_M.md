@@ -32,7 +32,7 @@ int NthRoot(int n, int m){
 }  
 ```
 
-## Approach 2 : Bianry Search
+## Approach 2 : Binary Search
 
 Time complexity : O(LogM) : Binary search on range
 Space complexity : O(1)
