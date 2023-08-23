@@ -1,7 +1,6 @@
 # Scope Resolution Operator 
 
-## Use of scope resolution operator are as follows :- 
-
+## Use of scope resolution operator are as follows 
 - Accessing a global variable when there is a local variable with same name
 - Defining a function outside a class
 - Accessing a class’s static variables

@@ -6,6 +6,8 @@
 
 - Initialization of static variable is done outside the class using scope resolution operator
 
+## Static Variables
+
 ```cpp
 // Student class example for static variables
 class Student{
@@ -64,5 +66,36 @@ int main(){
 	Counter c3;
 	c3.show();
 
+}
+```
+
+## Static functions 
+
+```cpp
+class MathUtility {
+public:
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    static double squareRoot(double num) {
+        return sqrt(num);
+    }
+};
+
+int main(){
+	// As the static function and variable are class specific not objects
+
+	// Non static function are object specific, methods of class which are non static can only be invoked on object
+	MathUtility node;
+	int sum = node.add(5, 10);
+	cout << sum << endl;
+
+	// Static function are class specific
+	int sqRt = MathUtility::squareRoot(25);
+	cout << sqRt << endl;
+
+	// Static variables can be used without creating objects
+	cout << MathUtility::mycount << endl;
 }
 ```
