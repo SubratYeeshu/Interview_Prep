@@ -64,17 +64,6 @@ public:
 	Car(const Car &other) : name(other.name), age(other.age){};
 };
 
-
-class Animal{
-public:
-	string name;
-	int age;
-
-	~Animal(){
-		cout << "Destructor called" << endl;
-	}
-};
-
 int main(){
 	Student s1;  // Implicit invocation of constructor (even if it is not manually created)
 	Student s2 = Student("Subrat", "Yeeshu", 20); 
@@ -98,8 +87,24 @@ int main(){
 
 	Car mycar2 = (mycar);
 	cout << "Car name -> " << mycar2.name << ", Car age -> " << mycar2.age << endl;
+}
+```
 
-	Animal dog;
+## Destructors
+
+```cpp
+class Animal{
+public:
+	string name;
+	int age;
+
+	~Animal(){
+		cout << "Destructor called" << endl;
+	}
+};
+
+int main(){
+Animal dog;
 	dog.name = "Husky";
 	dog.age = 10;
 }

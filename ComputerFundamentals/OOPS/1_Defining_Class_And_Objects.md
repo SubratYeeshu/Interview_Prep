@@ -1,6 +1,8 @@
 # Defining Class and Objects
 
-- There are three methods to declare objects of class
+- When a class is defined some memory is allocated to it for designing the layout of class
+
+## There are three methods to declare objects of class
 
 ```cpp
 // Method 1 : 
@@ -52,5 +54,36 @@ int main(){
 
 	cout << "Information About Student 3 : " << obj3.name << " " << obj3.age << " " << obj3.height << endl;
 
+}
+```
+
+## Classes do take up space
+
+```cpp
+class person{
+public:
+	string name;
+	int age;
+
+	string firstName;
+	int x;
+	int y;
+	long long m;
+
+	// int arr[10000]; 
+
+	void fun(){
+		cout << this -> name;
+	}
+
+	person(string x, int y):name(x),age(y){};
+};
+
+int main(){
+	cout << sizeof(person) << endl;
+	person subrat("Subrat", 10);
+	cout << subrat.name << " " << subrat.age << endl;
+
+	cout << sizeof(subrat) << "  " << sizeof(person) << " " << sizeof(subrat.age);
 }
 ```

@@ -8,7 +8,7 @@
 - Friendship is not inherited
 
 ## Access private, protected method or data members 
-
+- Example 1
 ```cpp
 class Student{
 	int a = 10;
@@ -28,6 +28,7 @@ int main(){
 }
 ```
 
+- Example 2
 ```cpp
 class Complex{
 private:
@@ -64,6 +65,62 @@ int main(){
 
 	c3 = getSum(c1, c2);
 	c3.printNumber();
+}
+```
+
+- Example 3
+```cpp
+#include<bits/stdc++.h>
+using namespace std;
+
+class person2;
+
+class person{
+	int x;
+public:
+	friend void exchange(person &, person2 &);
+	void set(int y){
+		this -> x = y;
+	}
+
+	void print(){cout << x;}
+};
+
+class person2{
+	int y;
+public:
+	friend void exchange(person &, person2 &);
+	void set(int z){
+		this -> y = z;
+	}
+
+	void print(){cout << y;}
+
+};
+
+
+// Trying to access private data members
+void exchange(person &p1, person2 &p2){
+	swap(p1.x, p2.y);
+}
+
+int main(){
+	person p1;
+	p1.set(20);
+
+	person2 p2;
+	p2.set(40);
+
+	// Swap data 
+	exchange(p1, p2);
+
+	// Printing after swapping
+	cout << "P1 data after swapping -> ";
+	p1.print();
+	cout << endl;
+	cout << "P2 data after swapping -> ";
+	p2.print();
+	cout << endl;
 }
 ```
 

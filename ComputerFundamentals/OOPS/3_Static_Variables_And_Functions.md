@@ -1,4 +1,4 @@
-# Static Variables
+# Static Variables And Functions
 
 - Objects in class wok independently of each other because they have different memory location unless the variables which we are working on is not a static variable
 

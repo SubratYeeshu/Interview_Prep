@@ -1,5 +1,7 @@
 # Declaring And Defining Functions
 
+
+## Code snippet
 ```cpp
 class Student{
 public: 
