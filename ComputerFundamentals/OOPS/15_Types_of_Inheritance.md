@@ -261,6 +261,15 @@ TA::TA(int ) called
 
 - Example 2
 ```cpp
+/*
+
+      ClassA
+     /      \
+ClassB1     ClassB2
+     \      /
+      ClassC
+
+*/
 class A{
 public:
 	int a;
@@ -310,3 +319,58 @@ int main(){
 
 - Virtual Base Class
 - Add virtual keyword to the derived class of problamatic class while inheriting
+
+```cpp
+/*
+
+      ClassA
+     /   |   \
+ClassB1  |   ClassB2
+     \   |   /
+      ClassC
+ Fixes early binding
+*/
+class A{
+public:
+	int a;
+	void f1(){
+		cout << "Hello f1" << endl;
+	}
+};
+
+class B1:virtual public A{  // Creating the ambiguous class as virtual 
+public:
+	int b1;
+	void f2(){
+		cout << "Hello f2" << endl;
+	}
+};
+
+class B2:virtual public A{  // Creating the ambiguous class as virtual 
+public:
+	int b2;
+	void f3(){
+		cout << "Hello f3" << endl;
+	}
+};
+
+class C:public B1, public B2{
+public:
+	int c;
+	void f4(){
+		cout << "Hello f4" << endl;
+	}
+};
+
+
+int main(){
+	C obj;
+	cout << sizeof(obj) << endl;  // Four variables each of 4 bytes. total size must be 4*4	
+	// cout << obj.a;  // Ambiguous
+
+	obj.f4();
+	obj.f3();
+	obj.f2();
+	obj.f1();  // Ambiguity error
+};
+```
