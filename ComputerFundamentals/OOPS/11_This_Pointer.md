@@ -9,7 +9,7 @@
 - It's often used to avoid naming conflicts between local variables and member variables with the same name.
 - Using the this pointer is optional, as you can access member variables directly without it. However, it can make your code more self-explanatory in cases where there might be ambiguity.
 
-## Code snippet
+## Code Snippet
 
 ```cpp
 class MyClass {

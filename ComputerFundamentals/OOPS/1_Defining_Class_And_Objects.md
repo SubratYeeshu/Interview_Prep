@@ -87,3 +87,47 @@ int main(){
 	cout << sizeof(subrat) << "  " << sizeof(person) << " " << sizeof(subrat.age);
 }
 ```
+
+## Array of objects
+
+```cpp
+class Student{
+public:
+	string firstName;
+	string lastName;
+	int age;
+
+	// This pointer is passed to its member function invisibly
+	void printData(){
+		cout << this -> firstName << " " << this -> lastName << " " << this -> age << endl;
+	}
+
+	void setData(string x, string y, int z){
+		this -> firstName = x;
+		this -> lastName = y;
+		this -> age = z;
+	}
+};
+
+int main() {
+	Student myStudents[5];
+
+	vector<string> firstNames {"Subrat", "Ankit", "Praduman", "Saurabh", "Vaibhav"};
+	vector<string> lastNames {"Yeeshu", "Maurya", "Singh", "Parth", "Shukla"};
+
+	for(int i = 0 ; i < 5 ; i++){
+		myStudents[i].setData(firstNames[i], lastNames[i], i*4 + 5);
+	}
+
+	for(int i = 0 ; i < 5 ; i++){
+		myStudents[i].printData();
+	}
+
+	delete [] myStudents;
+
+	for(int i = 0 ; i < 5 ; i++){
+		myStudents[i].printData();
+	}
+
+}
+```

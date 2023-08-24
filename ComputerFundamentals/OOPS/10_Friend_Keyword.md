@@ -8,6 +8,7 @@
 - Friendship is not inherited
 
 ## Access private, protected method or data members 
+
 - Example 1
 ```cpp
 class Student{
