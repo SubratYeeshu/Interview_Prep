@@ -2,6 +2,8 @@
 
 ## Problem statement
 
+- Implement a queue data structure using stack 
+
 ## Approach 1 :
 
 Time complexity : O(N) 
