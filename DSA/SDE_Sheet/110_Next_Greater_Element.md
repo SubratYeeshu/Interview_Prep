@@ -78,7 +78,49 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 }
 ```
 
-## Approach 1.4 : Stack (Minor changes)
+## Approach 1.5 : Stack (Minor changes)
+
+Time complexity : O(N)  
+Space complexity : O(N)
+
+```cpp
+// Index based
+vector<long long> nextLargerElement(vector<long long> arr, int n){
+    vector<long long> res (n, -1);
+    stack<long long > st;
+    
+    for (int i = n - 1 ; i >= 0 ; i--) {
+        while (!st.empty() && arr[st.top()] <= arr[i])st.pop();
+        if (!st.empty())res[i] = arr[st.top()];
+        st.push(i);
+    }
+
+    return res;
+}
+```
+
+## Approach 1.5 : Stack (Minor changes)
+
+Time complexity : O(N)  
+Space complexity : O(N)
+
+```cpp
+vector<long long> nextLargerElement(vector<long long> arr, int n){
+    vector<long long> res (n, -1);
+    stack<pair<long long, long long>> st;
+    
+    for (int i = n - 1 ; i >= 0 ; i--) {
+        while(st.size() && st.top().first <= arr[i])st.pop();
+        if(st.size())res[i] = st.top().first;
+        else res[i] = -1;
+        st.push({arr[i], i});
+    }
+
+    return res;
+}
+```
+
+## Approach 1.6 : Stack (Minor changes)
 
 Time complexity : O(N)  
 Space complexity : O(N)
@@ -110,7 +152,7 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 
 - Find next greater element on the right for every elements. 
 
-## Approach 1 : Stack
+## Approach 1.1 : Stack
 
 Time complexity : O(N)  
 Space complexity : O(N)
@@ -128,4 +170,25 @@ vector<long long> nextLargerElementToLeft(vector<long long> arr, int n){
 
     return res;
 }
+```
+
+## Approach 1.2 Stack (Minor changes)
+
+Time complexity : O(N)  
+Space complexity : O(N)
+
+```cpp
+vector<long long> nextLargerElementToLeft(vector<long long> arr, int n){
+    vector<long long> res (n, -1);
+    stack<long long > st;
+    
+    for (int i = 0 ; i < n ; i++) {
+        while (!st.empty() && arr[st.top()] <= arr[i])st.pop();
+        if (!st.empty())res[i] = arr[st.top()];
+        st.push(i);
+    }
+
+    return res;
+}
+
 ```
