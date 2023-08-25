@@ -104,14 +104,19 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
     return nge;
 }
 ```
+# Next Greater Element to the left
 
-## Approach 2 : Next Greater to the left
+## Problem statement 
+
+- Find next greater element on the right for every elements. 
+
+## Approach 1 : Stack
 
 Time complexity : O(N)  
 Space complexity : O(N)
 
 ```cpp
-vector<long long> nextLargerElement(vector<long long> arr, int n){
+vector<long long> nextLargerElementToLeft(vector<long long> arr, int n){
     vector<long long> res (n, -1);
     stack<long long > st;
     
