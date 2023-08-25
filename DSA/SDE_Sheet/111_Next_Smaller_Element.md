@@ -24,7 +24,7 @@ vector<int> leftSmaller(int n, int arr[]){
 }
 ```
 
-# Smallest Number on Left
+# Smallest Number on Right
 
 ## Problem statement
 
