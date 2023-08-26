@@ -2,7 +2,7 @@
 
 ## Problem statement
 
-- Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 Implement the MinStack class: 
 - MinStack() initializes the stack object.
 - void push(int val) pushes the element val onto the stack.
