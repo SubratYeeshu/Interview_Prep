@@ -13,10 +13,10 @@ Implement the MinStack class:
 You must implement a solution with O(1) time complexity for each function.
 
 
-## Approach 1 : Using two stacks
+## Approach 1.1 : Using two stacks
 
-Time complexity : O(N) 
-Space complexity : O(1)
+Time complexity : O(1) 
+Space complexity : O(N)
 
 ```cpp
 stack<int> regularStack;
@@ -49,4 +49,47 @@ int getMin() {
     if(minStack.empty())return -1;
     return minStack.top();
 }
+```
+
+## Approach 1.2 : Using stack with pair
+
+Time complexity : O(1) 
+Space complexity : O(N)
+
+```cpp
+stack<pair<int,int>>st;
+MinStack() {
+    
+}
+
+void push(int val) {
+    int min;
+    if(st.empty()){
+        st.push({val, val});
+    }else{
+        if(val < st.top().second)st.push({val, val});
+        else st.push({val, st.top().second});
+    } 
+}
+
+void pop() {
+    if(st.size() > 0)st.pop();
+}
+
+int top() {
+    return st.top().first;
+}
+
+int getMin() {
+    return st.top().second;
+}
+```
+
+## Approach 2 : Using stack 
+
+Time complexity : O(1) 
+Space complexity : O(1)
+
+```cpp
+
 ```
