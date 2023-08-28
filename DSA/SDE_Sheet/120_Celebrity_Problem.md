@@ -8,8 +8,8 @@ Note: Follow 0 based indexing.
 
 ## Approach 1 : Grpah
 
-Time complexity : O(1) 
-Space complexity : O(1)
+Time complexity : O(N^2) 
+Space complexity : O(N)
 
 ```cpp
 int celebrity(vector<vector<int> >& M, int n){
@@ -36,5 +36,60 @@ int celebrity(vector<vector<int> >& M, int n){
             return i;
             
     return -1;
+}
+```
+
+## Approach 2 : Stack
+
+Time complexity : O(N) 
+Space complexity : O(N)
+
+```cpp
+int celebrity(vector<vector<int> >& M, int n){
+    stack<int> st;
+    
+    for(int i = 0 ; i < n ; i++)st.push(i);
+    
+    while(st.size() > 1){
+        int first = st.top(); st.pop();
+        int second = st.top(); st.pop();
+        
+        if(M[first][second] == 1)st.push(second);
+        else st.push(first);
     }
+    int cel = st.top();
+    
+    // Verifying
+    int zero = 0, one = 0;
+    // Row
+    for(int i = 0 ; i < n ; i++)if(M[cel][i] == 0)zero++;
+    // Col
+    for(int i = 0 ; i < n ; i++)if(M[i][cel] == 1)one++;
+    
+    if(zero == n && one == n - 1)return cel;
+    
+    return -1;
+}
+```
+
+## Approach 3 :
+
+Time complexity : O(N) 
+Space complexity : O(1)
+
+```cpp
+int celebrity(vector<vector<int> >& M, int n){
+    int c = 0;
+    
+    for(int i = 1 ; i < n ; i++){
+        if(M[c][i] == 1)
+            c = i;
+    }
+    
+    for(int i = 0 ; i < M.size() ; i++){
+        if(i != c && (M[c][i] == 1 || M[i][c] == 0))return -1;
+    }
+    
+    return c;
+}
 ```

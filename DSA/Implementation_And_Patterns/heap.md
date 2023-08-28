@@ -6,6 +6,18 @@
 
 - Can be implemented using array, for any node at ith index, child nodes are on (2\*i + 1) and (2\*i + 2) and for any child node its parent is present on the ((i - 1) / 2) index (0 based indexing). For (1 based indexing) child nodes are on (2\*i) and (2\*i + 1)index and the parent node on (i / 2) index.
 
+## Use case 
+
+
+- Priority Queues: Heaps are commonly used to implement priority queues, where elements with higher priority are extracted first. This is useful in many applications such as scheduling tasks, handling interruptions, and processing events.
+
+- Sorting Algorithms: Heapsort, a comparison-based sorting algorithm, is implemented using the Heap data structure. It has a time complexity of O(n log n), making it efficient for large datasets.
+Graph algorithms: Heaps are used in graph algorithms such as Dijkstra’s shortest path algorithm, Prim’s minimum spanning tree algorithm, and the A* search algorithm.
+
+- File Compression: Heaps are used in data compression algorithms such as Huffman coding, which uses a priority queue implemented as a min-heap to build a Huffman tree.
+
+- Dynamic programming: Heaps are used in dynamic programming algorithms such as the greedy algorithm, where elements are processed in order of priority.
+
 ## Code
 
 ```cpp
