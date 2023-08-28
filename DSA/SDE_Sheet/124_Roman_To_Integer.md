@@ -7,3 +7,30 @@
 - -X can be placed before L (50) and C (100) to make 40 and 90. 
 - C can be placed before D (500) and M (1000) to make 400 and 900.
 Given a roman numeral, convert it to an integer.
+
+## Approach 1 : Map
+
+Time complexity : O(N) 
+Space complexity : O(N) 
+
+```cpp
+int romanToInt(string s) {
+    int n = s.size();
+    unordered_map<char, int> mp = {
+        { 'I', 1 },
+        { 'V' , 5 },
+        { 'X' , 10 },
+        { 'L' , 50 },
+        { 'C' , 100 },
+        { 'D' , 500 },
+        { 'M' , 1000 }
+    };
+    int res = 0;
+        
+    for(int i = 0 ; i < n ; i++){
+        if(i + 1 < n && mp[s[i]] < mp[s[i + 1]])res -= mp[s[i]];
+        else res += mp[s[i]];
+    }
+    return res;       
+}
+```
