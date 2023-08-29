@@ -106,3 +106,5 @@ int repeatedStringMatch(string A, string B){
     return -1;
 }
 ```
+
+## Approach 3 : KMP

@@ -1,6 +1,6 @@
-# Rabin Karp, Search Pattern GFG
+# Rabin Karp (String Matching Algorithm)
 
-## Problem statement
+## Problem statement (Search Pattern GFG)
 
 - Given two strings, one is a text string and other is a pattern string. The task is to print the indexes of all the occurences of pattern string in the text string. For printing, Starting Index of a string should be taken as 1.
 
