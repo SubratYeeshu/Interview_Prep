@@ -11,6 +11,9 @@
 
 ## Approach 1 : Implementation
 
+Time complexity : O(N) 
+Space complexity : O(1) 
+
 ```cpp
 string processString(string &s){
     removeLeadingWhitespace(s);

@@ -18,6 +18,7 @@
 - Disadvantage : The main disadvantage of the trie is that it takes a lot of memory to store all the strings
 
 ## Code snippet : With root node as global
+
 ```cpp
 class Trie {
 public:

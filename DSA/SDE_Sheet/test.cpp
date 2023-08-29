@@ -1,39 +1,22 @@
-int totalFruit(vector<int> &fruits)
+int hpat = 0, htxt = 0;
+int d = 31;
+int p = 1e9+7;
+for (int i = 0; i < pat.size(); i++)
 {
-    map<int, int> m;
-    int i = 0;
-    int j = 0;
-    int n = fruits.size();
-    int mx = INT_MIN;
-    while (j < n)
+    hpat *= d;
+    hpat = hpat + (((pat[i] - 'a' + 1)) % p);
+}
+int l = 0, r = 0;
+while (r < txt.size())
+{
+    htxt *= d;
+    htxt = htxt + ((txt[r] - 'a' + 1) % p);
+    if (r - l + 1 == pat.size())
     {
-            m[fruits[j]]++;
-        // if (m.size() < 2)
-        // {
-            //     j++;
-        // }
-        if (m.size() <= 2)
-        {
-                mx = max(mx, j - i + 1);
-            j++;
-        }
-        else if (m.size() > 2)
-        {
-                while (m.size() > 2)
-            {
-                    m[fruits[i]]--;
-                if (m[fruits[i]] == 0)
-                {
-                        m.erase(fruits[i]);
-                }
-                i++;
-            }
-            j++;
-        }
+        if (htxt == hpat)
+            cout << "Match at " << l;
+        htxt = htxt - (((txt[l] - 'A' + 1) * pow(d, r - l)));
+        l++;
     }
-    if (mx == INT_MIN)
-    {
-            return 0;
-    }
-    return mx;
+    r++;
 }
