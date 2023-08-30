@@ -12,5 +12,23 @@ Time complexity : O(N)
 Space complexity : O(N)
 
 ```cpp
-
+vector<int> diagonal(Node *root){
+    if(!root)return {};
+    vector<int> ans;
+    queue<Node*> q;
+    q.push(root);
+   
+    while(!q.empty()){
+        int size = q.size();
+        Node *curr = q.front();
+        q.pop();
+       
+        while(curr != NULL){
+            ans.push_back(curr -> data);
+            if(curr -> left)q.push(curr -> left);
+            curr = curr -> right;
+        }
+    }
+    return ans;
+}
 ```
