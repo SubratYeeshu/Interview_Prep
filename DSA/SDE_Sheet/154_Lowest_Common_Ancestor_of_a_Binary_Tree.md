@@ -7,6 +7,9 @@ Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in
 
 ## Approach 1 : DFS (Brute - Root to node path)
 
+Time complexity : O(N)
+Space complexity : O(N)
+
 ```cpp
 bool rootToNode(TreeNode *root, TreeNode *target, vector<int> &path){
     if(!root)return false;
