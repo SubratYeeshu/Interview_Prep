@@ -6,8 +6,8 @@ Given the root of a binary tree, return the zigzag level order traversal of its 
 
 ## Approach 1 : Level order traversal
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
@@ -40,8 +40,8 @@ vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
 
 ## Approach 1.2 Level order traverasl 
 
-Time complexity : O(N^2)
-Space complexity : O(N)
+- Time complexity : O(N^2)
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> zigzagLevelOrder(TreeNode* root) {

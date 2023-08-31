@@ -6,8 +6,8 @@ Given the roots of two binary trees p and q, write a function to check if they a
 
 ## Approach 1 : DFS
 
-Time complexity : O(N)
-Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(LogN)
 
 ```cpp
 bool solve(TreeNode *root1, TreeNode *root2){

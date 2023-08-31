@@ -4,8 +4,8 @@ Print the path from root to node
 
 ## Problem statement
 
-Time complexity : O(N)
-Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(LogN)
 
 ```cpp
 bool dfs(TreeNode *root, int target, vector<int> &path){

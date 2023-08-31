@@ -2,13 +2,12 @@
 
 ## Problem statement
 
-Given a binary tree, determine if it is height-balanced.
--  Difference between heights of left and right subtree is at max 1
+Given a binary tree, determine if it is height-balanced. Difference between heights of left and right subtree is at max 1
 
 ## Approach 1 : Brute 
 
-Time complexity : O(N^2)
-Space complexity : O(LogN)
+- Time complexity : O(N^2)
+- Space complexity : O(LogN)
 
 ```cpp
 int height(TreeNode* root){
@@ -42,8 +41,8 @@ bool isBalanced(TreeNode* root) {
 
 ## Approach 2 : DFS (Optimal - Height Function Modification)
 
-Time complexity : O(N)
-Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(LogN)
 
 ```cpp
 bool ans = true;
@@ -66,8 +65,8 @@ bool isBalanced(TreeNode* root) {
 
 ## Approach 3 : DFS (Optimal - Return Pair)
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 class balancedNode{

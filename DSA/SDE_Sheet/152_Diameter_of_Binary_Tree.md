@@ -6,8 +6,8 @@ Given the root of a binary tree, return the length of the diameter of the tree. 
 
 ## Approach 1 : DFS (Brute)
 
-Time complexity : O(N^2)
-Space complexity : O(LogN)
+- Time complexity : O(N^2)
+- Space complexity : O(LogN)
 
 ```cpp
 int height(TreeNode *root){
@@ -36,8 +36,8 @@ int diameterOfBinaryTree(TreeNode* root) {
 
 ## Approach 2.1 : DFS (Optimal - Return Pair)
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 pair<int, int> solve(TreeNode *root){
@@ -65,9 +65,9 @@ int diameterOfBinaryTree(TreeNode* root) {
 ```
 
 ## Approach 2.2 : DFS (Optimal - Height Function Modification)
-    
-Time complexity : O(N)
-Space complexity : O(LogN)
+
+- Time complexity : O(N)
+- Space complexity : O(LogN)
 
 ```cpp
 int maxi = INT_MIN;
