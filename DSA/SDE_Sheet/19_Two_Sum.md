@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order
 
 ## Approach 1 : Brute
 
-Time complexity : O(N^2) 
-Space complexity : O(1)
+- Time complexity : O(N^2) 
+- Space complexity : O(1)
 
 ```cpp
 vector<int> twoSum(vector<int>& nums, int target) {
@@ -27,8 +27,8 @@ vector<int> twoSum(vector<int>& nums, int target) {
 
 ## Approach 2 : Map
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 vector<int> twoSum(vector<int>& nums, int target) {

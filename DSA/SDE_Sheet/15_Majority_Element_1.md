@@ -2,12 +2,12 @@
 
 ## Problem Statement
 
-- Given an array nums of size n, return the majority element. The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+Given an array nums of size n, return the majority element. The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 
 ## Approach 1 : Brute
 
-Time complexity : O(N^2) 
-Space complexity : O(1)
+- Time complexity : O(N^2) 
+- Space complexity : O(1)
 
 ```cpp
 int majorityElement(vector<int>& nums) {
@@ -27,8 +27,8 @@ int majorityElement(vector<int>& nums) {
 
 ## Approach 2 : Better (Sorting)
 
-Time complexity : O(N \* LogN) 
-Space complexity : O(1)
+- Time complexity : O(N \* LogN) 
+- Space complexity : O(1)
 
 ```cpp
 int majorityElement(vector<int>& nums) {
@@ -46,8 +46,8 @@ int majorityElement(vector<int>& nums) {
 
 ## Approach 3 : Better (Using Map)
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 int majorityElement(vector<int>& nums) {
@@ -63,8 +63,8 @@ int majorityElement(vector<int>& nums) {
 
 ## Approach 4 : Optimal (Moore's Voting)
 
-Time complexity : O(2N) 
-Space complexity : O(1)
+- Time complexity : O(2N) 
+- Space complexity : O(1)
 
 ```cpp
 //Elements are combined and exhausted to get a potential answer then we iterate once again to confirm it

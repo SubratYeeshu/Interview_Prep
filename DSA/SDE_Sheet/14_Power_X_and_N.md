@@ -6,8 +6,8 @@
 
 ## Approach 1 : Binary Exponentiation (Recursive)
 
-Time copmlexity : O(LogN)
-Space complexity : O(1)
+- Time copmlexity : O(LogN)
+- Space complexity : O(1)
 N is the number of bits
 
 ```cpp
@@ -31,8 +31,8 @@ double myPow(double x, int n) {
 
 ## Approach 2 : Binary Exponentiation (Iterative)
 
-Time copmlexity : O(LogN)
-Space complexity : O(1)
+- Time copmlexity : O(LogN)
+- Space complexity : O(1)
 N is the number of bits
 
 ```cpp

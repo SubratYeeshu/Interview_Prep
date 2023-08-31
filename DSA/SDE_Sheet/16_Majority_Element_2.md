@@ -2,12 +2,12 @@
 
 ## Problem Statement
 
-- Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
+Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
 
 ## Approach 1 : Brute 
 
-Time complexity : O(N^2) 
-Space complexity : O(1)
+- Time complexity : O(N^2) 
+- Space complexity : O(1)
 
 ```cpp
 vector<int> majorityElement(vector<int>& nums) {
@@ -27,8 +27,8 @@ vector<int> majorityElement(vector<int>& nums) {
 
 ## Approach 2 : Better (Using Map)
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 vector<int> majorityElement(vector<int>& nums) {
@@ -51,8 +51,8 @@ vector<int> majorityElement(vector<int>& nums) {
 
 ## Approach 3 : Optimal (Moore's Voting)
 
-Time complexity : O(2N) 
-Space complexity : O(1)
+- Time complexity : O(2N) 
+- Space complexity : O(1)
 
 ```cpp
 vector<int> majorityElement(vector<int>& nums) {

@@ -2,15 +2,15 @@
 
 ## Problem statement
 
-- Given an integer array nums, return the number of reverse pairs in the array. A reverse pair is a pair (i, j) where:
+Given an integer array nums, return the number of reverse pairs in the array. A reverse pair is a pair (i, j) where:
 - 0 <= i < j < nums.length and
 - nums[i] > 2 * nums[j].
 
 
 ## Approach 1 : (Global variable)
 
-Time complexity : O(N \* LogN) 
-Space complexity : O(N)
+- Time complexity : O(N \* LogN) 
+- Space complexity : O(N)
 
 ```cpp
 int count = 0;
@@ -51,8 +51,8 @@ int reversePairs(vector<int>& nums) {
 
 ## Approach 2 : (Without global variable)
 
-Time complexity : O(N \* LogN) 
-Space complexity : O(N)
+- Time complexity : O(N \* LogN) 
+- Space complexity : O(N)
 
 ```cpp
 void merge(vector<int> &nums, int low, int mid, int high) {

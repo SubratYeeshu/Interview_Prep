@@ -2,12 +2,12 @@
 
 ## Problem Statement
 
-- Given an array of integers. Find the Inversion Count in the array. Inversion Count: For an array, inversion count indicates how far (or close) the array is from being sorted. If array is already sorted then the inversion count is 0. If an array is sorted in the reverse order then the inversion count is the maximum. Formally, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j.
+Given an array of integers. Find the Inversion Count in the array. Inversion Count: For an array, inversion count indicates how far (or close) the array is from being sorted. If array is already sorted then the inversion count is 0. If an array is sorted in the reverse order then the inversion count is the maximum. Formally, two elements a[i] and a[j] form an inversion if a[i] > a[j] and i < j.
 
 ## Approach 1 : Merge Sort (Using Global Variable)
 
-Time complexity : O(N \* LogN) 
-Space complexity : O(N)
+- Time complexity : O(N \* LogN) 
+- Space complexity : O(N)
 
 ```cpp
 long long int cnt = 0;
@@ -51,8 +51,8 @@ long long getInversions(long long *arr, int n){
 
 ## Approach 2 : Merge Sort (With return statements)
 
-Time complexity : O(N \* LogN) 
-Space complexity : O(N)
+- Time complexity : O(N \* LogN) 
+- Space complexity : O(N)
 
 ```cpp
 long long merge(long long arr[], long long N, int i, int mid, int j){

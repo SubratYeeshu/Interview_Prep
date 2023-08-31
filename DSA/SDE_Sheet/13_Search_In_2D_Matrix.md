@@ -4,14 +4,15 @@
 You are given an m x n integer matrix matrix with the following two properties:
 - Each row is sorted in non-decreasing order.
 - The first integer of each row is greater than the last integer of the previous row.
+
 Given an integer target, return true if target is in matrix or false otherwise.
 You must write a solution in O(log(m * n)) time complexity.
 
 
 ## Approach 1 : Using Binary Search
 
-Time complexity :  O(N + logM)
-Space complexity : O(1)
+- Time complexity :  O(N + logM)
+- Space complexity : O(1)
 
 ```cpp
 bool binary_search(vector<int> temp, int target){
@@ -46,8 +47,8 @@ bool searchMatrix(vector<vector<int>>& matrix, int target) {
 
 ## Approach 2 : Using simple traversal
 
-Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 bool searchMatrix(vector<vector<int>>& matrix, int target) {
