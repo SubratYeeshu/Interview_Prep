@@ -65,7 +65,7 @@ int diameterOfBinaryTree(TreeNode* root) {
 ```
 
 ## Approach 2.2 : DFS (Optimal - Height Function Modification)
-
+    
 Time complexity : O(N)
 Space complexity : O(LogN)
 
