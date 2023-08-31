@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given two sorted arrays, we need to merge them into a sorted array, when n is the size of the first array, and m is the size of the second array. In final output, first array contains first n sorted elements, second array contains last m sorted elements in sorted order.
+Given two sorted arrays, we need to merge them into a sorted array, when n is the size of the first array, and m is the size of the second array. In final output, first array contains first n sorted elements, second array contains last m sorted elements in sorted order.
 
 ## Approach 1 (Extra memory)
 
-Time complexity : O(N + M)  
-Space complexity : O(N + M)
+- Time complexity : O(N + M)  
+- Space complexity : O(N + M)
 
 ```cpp
 void merge(long long arr1[], long long arr2[], int n, int m) 
@@ -27,8 +27,8 @@ void merge(long long arr1[], long long arr2[], int n, int m)
 
 ## Approach 2 (Insertion sort)
 
-Time complexity : O(N \* M)  
-Space complexity : O(1)
+- Time complexity : O(N \* M)  
+- Space complexity : O(1)
 
 ```cpp
 void merge(long long arr1[], long long arr2[], int n, int m)
@@ -48,8 +48,8 @@ void merge(long long arr1[], long long arr2[], int n, int m)
 
 ## Approach 3 (Two pointer and one time sort)
 
-Time complexity : O(N \* log(N)) + O(M \* log(M))  
-Space complexity : O(1) (Ignoring space of sorting algo), otherwise O(N + M) due to merge sort
+- Time complexity : O(N \* log(N)) + O(M \* log(M))  
+- Space complexity : O(1) (Ignoring space of sorting algo), otherwise O(N + M) due to merge sort
 
 ```cpp
 void merge(long long arr1[], long long arr2[], int n, int m)
@@ -68,8 +68,8 @@ void merge(long long arr1[], long long arr2[], int n, int m)
 
 ## Approach 4 (Gap method)
 
-Time complexity : O((N + M) \* log(N + M))  
-Space complexity : O(1)
+- Time complexity : O((N + M) \* log(N + M))  
+- Space complexity : O(1)
 
 ```cpp
 int nextGap(int gap) {

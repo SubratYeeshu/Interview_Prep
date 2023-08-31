@@ -49,8 +49,8 @@ int maxPathSum(TreeNode* root) {
 
 ## Approach 1.2
 
-Time complexity : O(N)
-Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(LogN)
 
 ```cpp
 int maxi = INT_MIN;

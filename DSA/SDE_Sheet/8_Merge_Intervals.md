@@ -1,12 +1,13 @@
 # Merge Intervals
 
 ## Problem Statement
-- Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
 
 ## Approach 1 : Sortig + Using two for loops
 
-Time complexity : O(N \* LogN + 2 \* N)  
-Space complexity : O(N)
+- Time complexity : O(N \* LogN + 2 \* N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> merge(vector<vector<int>>& intervals) {
@@ -36,8 +37,8 @@ vector<vector<int>> merge(vector<vector<int>>& intervals) {
 
 ## Approach 2 : Sortig + Optimization
 
-Time complexity : O(N \* LogN + N)  
-Space complexity : O(N)
+- Time complexity : O(N \* LogN + N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> merge(vector<vector<int>>& intervals) {

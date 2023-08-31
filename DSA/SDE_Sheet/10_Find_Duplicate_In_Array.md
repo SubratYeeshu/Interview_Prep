@@ -2,13 +2,13 @@
 
 ## Problem statement
 
-- Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
+Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 There is only one repeated number in nums, return this repeated number.
 
 # Approach 1 : (Sorting)
 
-Time complexity : O(N \* log(N))  
-Space complexity : O(1) (Ignoring space taken by sorting algo)
+- Time complexity : O(N \* log(N))  
+- Space complexity : O(1) (Ignoring space taken by sorting algo)
 
 ```cpp
 int findDuplicate(vector<int>& nums) {
@@ -22,8 +22,8 @@ int findDuplicate(vector<int>& nums) {
 
 ## Approach 2 : (Calculate frequency)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 int findDuplicate(vector<int>& nums) {
@@ -38,8 +38,8 @@ int findDuplicate(vector<int>& nums) {
 
 ## Approach 3 : (Floyd's LL Cycle)
 
-Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 int findDuplicate(vector<int>& nums) {
@@ -64,10 +64,16 @@ int findDuplicate(vector<int>& nums) {
 
 ## Approach 4 : Swap Sort (Non Intutive - Scalable)
 
-- Return nums[i] - > Duplicate
-- Return i + 1 - > Missing
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
+/*
+
+    - Return nums[i] - > Duplicate
+    - Return i + 1 - > Missing
+
+*/
 int findDuplicate(vector<int>& nums) {
     int i=0, n= nums.size(); 
     while(i<n){

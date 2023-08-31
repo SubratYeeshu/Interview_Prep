@@ -5,8 +5,8 @@
 
 ## Approach 1 : 
 
-Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 int maxProfit(vector<int>& prices) {
@@ -21,8 +21,8 @@ int maxProfit(vector<int>& prices) {
 
 ## Approach 2 : Using DP
 
-Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 int dp[100001][2];

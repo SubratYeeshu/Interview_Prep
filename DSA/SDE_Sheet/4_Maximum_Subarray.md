@@ -2,22 +2,22 @@
 
 ## Problem Statement
 
-- Given an integer array nums, find the subarray with the largest sum, and return its sum.
+Given an integer array nums, find the subarray with the largest sum, and return its sum.
 
 ## Approach 1 : Brute (Generate All Subarray)
 
-Time complexity : O(N^3)  
-Space complexity : O(1)
+- Time complexity : O(N^3)  
+- Space complexity : O(1)
 
 ## Approach 2 : Brute (Generate All Subarray with optimization)
 
-Time complexity : O(N^2)  
-Space complexity : O(1)
+- Time complexity : O(N^2)  
+- Space complexity : O(1)
 
 ## Approach 3 : Kadanes Algorithm 
 
-Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 int maxSubArray(vector<int>& nums) {
@@ -33,8 +33,8 @@ int maxSubArray(vector<int>& nums) {
 
 ## Printing the subarray
 
-Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 int maxSubArray(vector<int>& nums) {

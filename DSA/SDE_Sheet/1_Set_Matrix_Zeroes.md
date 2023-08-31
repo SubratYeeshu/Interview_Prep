@@ -6,8 +6,8 @@ Given an m x n integer matrix, if an element is 0, set its entire row and column
 
 ## Approach 1 : Using 2D Auxillary matrix, whenever we find 0 in the original matrix we update auxillary matrix
 
-Time complexity : O(M \* N \* (M + N))  
-Space complexity : O(M \* N)
+- Time complexity : O(M \* N \* (M + N))  
+- Space complexity : O(M \* N)
 
 ```cpp
 void setRowColoumn(vector<vector<int>>& matrix, int i, int j){
@@ -40,8 +40,8 @@ void setZeroes(vector<vector<int>>& matrix) {
 
 ## Approach 2 (Using two 1D matrix as markers) 
 
-Time complexity : O(M \* N)  
-Space complexity : O(M + N)
+- Time complexity : O(M \* N)  
+- Space complexity : O(M + N)
 
 ```cpp
 void setZeroes(vector<vector<int>>& matrix) {
@@ -69,8 +69,8 @@ void setZeroes(vector<vector<int>>& matrix) {
 
 ## Approach 3 (Constant space)
 
-Time complexity : O(M \* N)  
-Space complexity : O(1)
+- Time complexity : O(M \* N)  
+- Space complexity : O(1)
 
 ```cpp
 void setZeroes(vector<vector<int>>& matrix) {
@@ -102,8 +102,8 @@ void setZeroes(vector<vector<int>>& matrix) {
 
 ## Approach 4 : Same as approach 3
 
-Time complexity : O(M\*N)  
-Space complexity : O(1)
+- Time complexity : O(M\*N)  
+- Space complexity : O(1)
 
 ```cpp
 void setZeroes(vector<vector<int>>& matrix) {

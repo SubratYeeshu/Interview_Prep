@@ -6,8 +6,8 @@ Given an unsorted array of size n. Array elements are in the range from 1 to n. 
 
 ## Approach 1 (Brute force)
 
-Time complexity : O(N \* log(n))  
-Space complexity : O(1)
+- Time complexity : O(N \* log(n))  
+- Space complexity : O(1)
 
 ```cpp
 vector<int> findTwoElement(vector<int> A, int n) {
@@ -24,8 +24,8 @@ vector<int> findTwoElement(vector<int> A, int n) {
 
 ## Approach 2 (Extra array)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<int> findTwoElement(vector<int> A, int n) {
@@ -43,9 +43,8 @@ vector<int> findTwoElement(vector<int> A, int n) {
 
 ## Approach 3 (Mathematics)
 
-Time complexity : O(N)  
-Space complexity : O(1)  
-it requires long int to store large values
+- Time complexity : O(N)  
+- Space complexity : O(1) it requires long int to store large values
 
 ```cpp
 vector<int> findTwoElement(vector<int> A, int n) {
@@ -71,8 +70,8 @@ vector<int> findTwoElement(vector<int> A, int n) {
 
 ## Approach 4 (XOR)
 
-Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 int *findTwoElement(int *arr, int n) {

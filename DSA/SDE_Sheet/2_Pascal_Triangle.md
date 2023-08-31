@@ -6,8 +6,8 @@ There can be three variation to this problem
 
 ## Variation 1 : Find the element present at the give row number and coloumn number
 
-Time complexity : O(M \* N \* (M + N))  
-Space complexity : O(M \* N)
+- Time complexity : O(M \* N \* (M + N))  
+- Space complexity : O(M \* N)
 
 ```cpp
 int ncr(int n, int r){
@@ -32,8 +32,8 @@ void type1(int row, int col){
 
 ## Variation 2 : Generate the row with given row number
 
-Time complexity :  Time complexity : O(N)  
-Space complexity : O(1)
+- Time complexity :  Time complexity : O(N)  
+- Space complexity : O(1)
 
 ```cpp
 void type2(int row){
@@ -55,8 +55,8 @@ type2(5);
 
 ## Variation 3 : Generate the whole pascal triangle
 
-Time complexity : O(N^2)  
-Space complexity : O(1)
+- Time complexity : O(N^2)  
+- Space complexity : O(1)
 
 ```cpp
 // Generating a row O(N)
@@ -83,8 +83,8 @@ vector<vector<int>> generate(int numRows) {
 
 ## Variation 3 : Generate the whole pascal triangle 
 
-Time complexity : O(N \* 2)  
-Space complexity : O(1)
+- Time complexity : O(N \* 2)  
+- Space complexity : O(1)
 
 ```cpp
 // Another approach
