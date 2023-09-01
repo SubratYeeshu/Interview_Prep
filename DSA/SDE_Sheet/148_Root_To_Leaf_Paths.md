@@ -6,8 +6,8 @@ Given the root of a binary tree, return all root-to-leaf paths in any order. A l
 
 ## Approach 1 : Recursion
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 void solve(TreeNode *root, string psf, vector<string> &res){

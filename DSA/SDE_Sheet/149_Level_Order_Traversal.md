@@ -6,8 +6,8 @@ Given the root of a binary tree, return the level order traversal of its nodes' 
 
 ## Approach 1 : Level order (Multi Line - Level Wise)
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> levelOrder(TreeNode* root) {
@@ -41,8 +41,8 @@ vector<vector<int>> levelOrder(TreeNode* root) {
 
 ## Approach 2 : Level order (Single Line - Level Wise)
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> levelOrder(TreeNode* root) {

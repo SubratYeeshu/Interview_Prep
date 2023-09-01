@@ -2,10 +2,14 @@
 
 ## Problem statement
 
-- Given two strings a and b, return the minimum number of times you should repeat string a so that string b is a substring of it. If it is impossible for b​​​​​​ to be a substring of a after repeating it, return -1. 
+Given two strings a and b, return the minimum number of times you should repeat string a so that string b is a substring of it. If it is impossible for b​​​​​​ to be a substring of a after repeating it, return -1. 
+
 - Notice: string "abc" repeated 0 times is "", repeated 1 time is "abc" and repeated 2 times is "abcabc".
 
 ## Approach 1 : Brute
+
+- Time complexity : O(N^2)
+- Space complexity : O(1) 
 
 ```cpp
 bool check(string &a, string &b){
@@ -43,8 +47,8 @@ int repeatedStringMatch(string a, string b) {
 
 ## Approach 2 : Rabin Karp
 
-Time complexity : O(M + N)
-Space complexity : O(2\*M) ~ O(M) (prefix hash array and power array of size M)
+- Time complexity : O(M + N)
+- Space complexity : O(2\*M) ~ O(M) (prefix hash array and power array of size M)
 
 ```cpp
 int Rabin_Karp(string s1, string s2){

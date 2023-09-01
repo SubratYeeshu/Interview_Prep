@@ -2,12 +2,12 @@
 
 ## Problem statement 
 
-- Given an input string s, reverse the order of the words. A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space. Return a string of the words in reverse order concatenated by a single space. Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+Given an input string s, reverse the order of the words. A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space. Return a string of the words in reverse order concatenated by a single space. Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
 
 ## Approach 1 : Using utility (Stringstream)
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 string reverseWords(string s) {
@@ -26,8 +26,8 @@ string reverseWords(string s) {
 
 ## Approach 2 : Implementation + Linear space
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 string reverseWords(string s) {
@@ -53,8 +53,8 @@ string reverseWords(string s) {
 
 ## Approach 3 : Implementation + Constant space
 
-Time complexity : O(N) 
-Space complexity : O(1)
+- Time complexity : O(N) 
+- Space complexity : O(1)
 
 ```cpp
 string reverseWords(string s) {

@@ -2,12 +2,12 @@
 
 ## Problem statement 
 
-- Find the inorder and preorder traversal of a binary tree without using extra space
+Find the inorder and preorder traversal of a binary tree without using extra space
 
 ## Variation 1 : Morris Traversal (Inorder)
 
-Time complexity : O(N)
-Space complexity : O(1) 
+- Time complexity : O(N)
+- Space complexity : O(1) 
 
 ```cpp
 vector<int> inorderTraversal(TreeNode* root) {
@@ -44,8 +44,8 @@ vector<int> inorderTraversal(TreeNode* root) {
 
 ## Variation 2 : Morris Traversal (Preorder)
 
-Time complexity : O(N)
-Space complexity : O(1) 
+- Time complexity : O(N)
+- Space complexity : O(1) 
 
 ```cpp
 vector<int> preorderTraversal(TreeNode* root) {

@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given a Binary Tree, return Left view of it. Left view of a Binary Tree is set of nodes visible when tree is visited from Left side. The task is to complete the function leftView(), which accepts root of the tree as argument.
+Given a Binary Tree, return Left view of it. Left view of a Binary Tree is set of nodes visible when tree is visited from Left side. The task is to complete the function leftView(), which accepts root of the tree as argument.
 
 ## Approach 1 : DFS
 
-Time complexity : O(N)
-Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(LogN)
 
 ```cpp
 void solve(Node *root, vector<int> &res, int level){
@@ -27,8 +27,8 @@ vector<int> leftView(Node *root){
 
 ## Approach 2 : Level Order
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<int> leftView(Node *root){

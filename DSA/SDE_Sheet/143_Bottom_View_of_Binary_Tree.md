@@ -2,13 +2,13 @@
 
 ## Problem statement
 
-- Given a binary tree, print the bottom view from left to right.
+Given a binary tree, print the bottom view from left to right.
 A node is included in bottom view if it can be seen when we look at the tree from bottom.
 
 ## Approach 1 : Recursive
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 map<int, pair<int, int>> mp; 
@@ -30,8 +30,8 @@ vector <int> bottomView(Node *root) {
 
 ## Approach 2 : Level order
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 // At every horizontal level pick up the lower most level nodes

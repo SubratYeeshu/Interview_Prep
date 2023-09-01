@@ -8,8 +8,8 @@ Given a Binary Tree, print the diagonal traversal of the binary tree.
 
 ## Approach 1 : 
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<int> diagonal(Node *root){

@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given the root of a binary tree, return the preorder traversal of its nodes' values.
+Given the root of a binary tree, return the preorder traversal of its nodes' values.
 
 ## Approach 1 : Recursive
 
-Time complexity : O(N)
-Space complexity : O(LogN) 
+- Time complexity : O(N)
+- Space complexity : O(LogN) 
 
 ```cpp
 void postorder(TreeNode *root, vector<int> &res){
@@ -27,8 +27,8 @@ vector<int> postorderTraversal(TreeNode* root) {
 
 ## Approach 2 : Iterative (Two - Stack)
 
-Time complexity : O(N)
-Space complexity : O(N) 
+- Time complexity : O(N)
+- Space complexity : O(N) 
 
 ```cpp
 vector<int> postorderTraversal(TreeNode* root) {
@@ -56,8 +56,8 @@ vector<int> postorderTraversal(TreeNode* root) {
 
 ## Approach 3 : Iterative (One - Stack)
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<int> postorderTraversal(TreeNode* root) {

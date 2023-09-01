@@ -10,8 +10,8 @@ Return the vertical order traversal of the binary tree.
 
 ## Approach 1 : DFS
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 /*
@@ -47,8 +47,8 @@ vector<vector<int>> verticalTraversal(TreeNode* root) {
 
 ## Approach 2 : BFS
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> verticalTraversal(TreeNode* root) {
@@ -86,8 +86,8 @@ vector<vector<int>> verticalTraversal(TreeNode* root) {
 
 ## Approach 2.2 : BFS 
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<vector<int>> verticalTraversal(TreeNode* root) {

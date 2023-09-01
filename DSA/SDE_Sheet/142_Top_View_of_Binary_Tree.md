@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given below is a binary tree. The task is to print the top view of binary tree. Top view of a binary tree is the set of nodes visible when the tree is viewed from the top. For the given below tree
+Given below is a binary tree. The task is to print the top view of binary tree. Top view of a binary tree is the set of nodes visible when the tree is viewed from the top. For the given below tree
 
 ## Approach 1 : Recursive
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 /*
@@ -37,8 +37,8 @@ vector<int> topView(Node *root){
 
 ## Approach 2 : Level order
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 // At every horizontal level pick up the upper most level nodes

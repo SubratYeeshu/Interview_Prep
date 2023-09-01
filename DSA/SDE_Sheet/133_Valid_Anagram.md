@@ -2,12 +2,12 @@
 
 ## Problem statement
  
-- Given two strings s and t, return true if t is an anagram of s, and false otherwise. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Given two strings s and t, return true if t is an anagram of s, and false otherwise. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
 ## Approach 1 : Implementation
 
-Time complexity : O(N)
-Space complexity : O(N) 
+- Time complexity : O(N)
+- Space complexity : O(N) 
 
 ```cpp
 bool isAnagram(string s, string t) {

@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given a string s, return the longest palindromic substring in s.
+Given a string s, return the longest palindromic substring in s.
 
 ## Approach 1 : Brute
 
-Time complexity : O(N^3) 
-Space complexity : O(N)
+- Time complexity : O(N^3) 
+- Space complexity : O(N)
 
 ```cpp
 bool isPalindrome(string temp){
@@ -45,8 +45,8 @@ string longestPalindrome(string s) {
 
 ## Approach 2 : Better
 
-Time complexity : O(N^2) 
-Space complexity : O(N)
+- Time complexity : O(N^2) 
+- Space complexity : O(N)
 
 ```cpp
 string longestPalindrome(string s) {
@@ -84,8 +84,8 @@ string longestPalindrome(string s) {
 
 ## Approach 3 : DP
 
-Time complexity : O(N^2) 
-Space complexity : O(N^2) 
+- Time complexity : O(N^2) 
+- Space complexity : O(N^2) 
 
 ```cpp
 string longestPalindrome(string s) {

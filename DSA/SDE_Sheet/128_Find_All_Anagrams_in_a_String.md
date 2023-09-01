@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Given two strings s and p, return an array of all the start indices of p's anagrams in s. You may return the answer in any order. An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
 ## Approach 1 : Brute
 
-Time complexity : O(N^M) 
-Space complexity : O(N)
+- Time complexity : O(N^M) 
+- Space complexity : O(N)
 
 ```cpp
 bool isAnagram(string a, string b){
@@ -42,8 +42,8 @@ vector<int> findAnagrams(string s, string p) {
 
 ## Approach 2.1 : Sliding Window
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 vector<int> findAnagrams(string s, string p) {
@@ -75,8 +75,8 @@ vector<int> findAnagrams(string s, string p) {
 
 ## Approach 2.2 : Sliding Window
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 vector<int> findAnagrams(string s, string p) {
@@ -110,8 +110,8 @@ vector<int> findAnagrams(string s, string p) {
 
 ## Approach 3 : Rolling Hash (Weak Hash) - Wrong Answer Due to collision 
 
-Time complexity : O(N) 
-Space complexity : O(1)
+- Time complexity : O(N) 
+- Space complexity : O(1)
 
 ```cpp
 vector<int> findAnagrams(string s, string p) {

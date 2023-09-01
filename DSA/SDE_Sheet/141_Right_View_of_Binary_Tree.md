@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given a Binary Tree, return Left view of it. Right view of a Binary Tree is set of nodes visible when tree is visited from Right side. The task is to complete the function rightSideView(), which accepts root of the tree as argument.
+Given a Binary Tree, return Left view of it. Right view of a Binary Tree is set of nodes visible when tree is visited from Right side. The task is to complete the function rightSideView(), which accepts root of the tree as argument.
 
 ## Approach 1 : DFS
 
-Time complexity : O(N)
-Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(LogN)
 
 ```cpp
 void solve(TreeNode *root, vector<int> &res, int level){
@@ -26,8 +26,8 @@ vector<int> rightSideView(TreeNode* root) {
 
 ## Approach 2 : Level order
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 vector<int> rightSideView(TreeNode* root) {

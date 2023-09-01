@@ -10,8 +10,8 @@ Note: If the root doesn't have a left subtree or right subtree, then the root it
 
 ## Approach 1.1 : Implementation
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 /*
@@ -68,8 +68,8 @@ vector <int> boundary(Node *root){
 
 ## Approach 1.2 : Implementation
 
-Time complexity : O(N)
-Space complexity : O(N)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 inline bool isLeaf(Node *root){

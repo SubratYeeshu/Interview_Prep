@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
+Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
 
 ## Approach 1 : Brute
 
-Time complexity : O(L \* N) 
-Space complexity : O(1) 
+- Time complexity : O(L \* N) 
+- Space complexity : O(1) 
 
 ```cpp
 string longestCommonPrefix(vector<string>& strs) {
@@ -37,8 +37,8 @@ string longestCommonPrefix(vector<string>& strs) {
 
 ## Approach 2 : Sorting
 
-Time complexity : O(NLogN) 
-Space complexity : O(1) 
+- Time complexity : O(NLogN) 
+- Space complexity : O(1) 
 
 ```cpp
 string longestCommonPrefix(vector<string>& strs) {
@@ -60,8 +60,8 @@ string longestCommonPrefix(vector<string>& strs) {
 
 ## Trie
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 
