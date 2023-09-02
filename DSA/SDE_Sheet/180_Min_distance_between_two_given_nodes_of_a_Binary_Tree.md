@@ -4,7 +4,7 @@
 
 Given a binary tree and two node values your task is to find the minimum distance between them. The given two nodes are guaranteed to be in the binary tree and nodes are numbered from 1 to N. Please Note that a and b are not always leaf node.
 
-## Approach 1 : Store LCA Path
+## Approach 1 : LCA (Storing Path)
 
 - Time complexity : O(N)
 - Space complexity : O(N)
@@ -42,5 +42,47 @@ int findDist(Node* root, int a, int b) {
     }
     
     return m + n - 2 * j - 2;
+}
+```
+
+## Approach 2 : LCA (Without Storing Path)
+
+- Time complexity : O(N)
+- Space complexity : O(LogN)
+
+```cpp
+Node* LCA(Node *root, int node1, int node2){
+    if(!root)return NULL;
+    if(root -> data == node1 || root -> data == node2)return root;
+    
+    Node *fromLeft = LCA(root -> left, node1, node2);
+    Node *fromRight = LCA(root -> right, node1, node2);
+    
+    if(fromLeft != NULL && fromRight != NULL)return root;
+    if(fromLeft == NULL)return fromRight;
+    else return fromLeft;
+}
+
+int findDistance(Node *root, int tg, int level){
+    if(!root)return -1;
+    
+    if(root -> data == tg)return level;
+    
+    int leftDistance = findDistance(root -> left, tg, level + 1);
+    int rightDistance = findDistance(root -> right, tg, level + 1);
+    
+    if(leftDistance != -1)return leftDistance;
+    return rightDistance;
+}
+
+int findDist(Node* root, int a, int b) {
+    Node *lcaNode = LCA(root, a, b);
+
+    if(!lcaNode)return 0;
+    
+    int d1 = findDistance(lcaNode, a, 0);
+    int d2 = findDistance(lcaNode, b, 0);
+    
+    return d1 + d2;   
 }
 ```
