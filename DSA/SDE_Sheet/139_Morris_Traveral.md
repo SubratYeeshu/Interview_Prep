@@ -16,6 +16,7 @@ vector<int> inorderTraversal(TreeNode* root) {
     
     while(curr != NULL){
         if(curr -> left == NULL){
+            // Inorder / Preorder Processing Part
             res.push_back(curr -> val);
             curr = curr -> right;
             
@@ -32,7 +33,10 @@ vector<int> inorderTraversal(TreeNode* root) {
             }else{
                 // Loop thread is present
                 temp -> right = NULL;
+                
+                // Inorder Processing Part
                 res.push_back(curr -> val);  // Inorder
+                
                 curr = curr -> right;
             }
         }
@@ -54,9 +58,9 @@ vector<int> preorderTraversal(TreeNode* root) {
 
     while(curr != NULL){
         if(curr -> left == NULL){
+            // Inorder / Preorder Processing Part
             res.push_back(curr -> val);
             curr = curr -> right;
-
         }else{
             // Thread creation
             TreeNode *temp = curr -> left;
@@ -65,7 +69,10 @@ vector<int> preorderTraversal(TreeNode* root) {
             if(temp -> right == NULL){
                 // No thread present
                 temp -> right = curr;
+
+                // Prorder Processing Part
                 res.push_back(curr -> val);  // Pre order
+                
                 curr = curr -> left;
             }else{
                 // Loop thread is present
