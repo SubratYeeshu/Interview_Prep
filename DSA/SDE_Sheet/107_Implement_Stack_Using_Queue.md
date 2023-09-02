@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Implement a Stack using  queue
+Implement a Stack using  queue
 
 ## Approach 1 : Using two queues
 
-Time complexity : O(N) 
-Space complexity : O(2N)
+- Time complexity : O(N) 
+- Space complexity : O(2N)
 
 ```cpp
 /*
@@ -41,8 +41,8 @@ int QueueStack :: pop(){
 
 ## Approach 2 : Using single queues
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 queue<int> q1;

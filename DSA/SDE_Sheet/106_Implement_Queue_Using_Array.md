@@ -2,14 +2,15 @@
 
 ## Problem statement
 
-- Implement a Queue using an Array. Queries in the Queue are of the following type:
-A query of this type means  pushing 'x' into the queue
-A query of this type means to pop element from queue and print the poped element
+Implement a Queue using an Array. Queries in the Queue are of the following type:
+
+- A query of this type means  pushing 'x' into the queue
+- A query of this type means to pop element from queue and print the poped element
 
 ## Approach 1 : Using Arraya
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 int arr[100005];
@@ -33,8 +34,8 @@ int MyQueue :: pop(){
 
 ## Approach 1 : Using circular array
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 int arr[100005];

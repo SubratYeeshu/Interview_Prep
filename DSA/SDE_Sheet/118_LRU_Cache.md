@@ -10,8 +10,8 @@ Design a data structure that follows the constraints of a Least Recently Used (L
 
 ## Approach 1 : Brute
 
-Time complexity : O(N) 
-Space complexity : O(cap)
+- Time complexity : O(N) 
+- Space complexity : O(cap)
 
 ```cpp
 /* 
@@ -78,8 +78,8 @@ class LRUCache{
 
 ## Approach 2 : List + Map KeyValue + Map KeyIterator
 
-Time complexity : O(1) 
-Space complexity : O(cap)
+- Time complexity : O(1) 
+- Space complexity : O(cap)
 
 
 ```cpp

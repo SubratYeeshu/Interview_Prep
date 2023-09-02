@@ -2,12 +2,12 @@
 
 ## Problem statement 
 
-- Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
 
 ## Approach 1 : Brute 
 
-Time complexity : O(NLogN) 
-Space complexity : O(N)
+- Time complexity : O(NLogN) 
+- Space complexity : O(N)
 
 ```cpp
 vector<int> topKFrequent(vector<int>& nums, int k) {
@@ -30,8 +30,8 @@ vector<int> topKFrequent(vector<int>& nums, int k) {
 
 ## Approach 2 : Optimal
 
-Time complexity : O(NLogK) min heap, O(NLog(N - K)) max heap
-Space complexity : O(N)
+- Time complexity : O(NLogK) min heap, O(NLog(N - K)) max heap
+- Space complexity : O(N)
 
 ```cpp
 vector<int> topKFrequent(vector<int>& nums, int k) {

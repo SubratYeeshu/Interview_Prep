@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
+Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
  
 ## Approach 1 : Brute
 
-Time complexity : O(N^2)  
-Space complexity : O(1)
+- Time complexity : O(N^2)  
+- Space complexity : O(1)
 
 ```cpp
 int largestRectangleArea(vector<int>& heights) {
@@ -25,8 +25,8 @@ int largestRectangleArea(vector<int>& heights) {
 
 ## Approach 2 : Optimal (Stack)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<int> getNextSmaller(vector<int> &nums){

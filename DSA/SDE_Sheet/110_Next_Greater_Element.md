@@ -2,12 +2,14 @@
 
 ## Problem statement
 
-- Given an array arr[ ] of size N having elements, the task is to find the next greater element for each element of the array in order of their appearance in the array. Next greater element of an element in the array is the nearest element on the right which is greater than the current element. If there does not exist next greater of current element, then next greater element for current element is -1. For example, next greater of the last element is always -1.
+Given an array arr[ ] of size N having elements, the task is to find the next greater element for each element of the array in order of their appearance in the array. Next greater element of an element in the array is the nearest element on the right which is greater than the current element. 
+
+If there does not exist next greater of current element, then next greater element for current element is -1. For example, next greater of the last element is always -1.
 
 ## Approach 1.1 : Stack 
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<long long> nextLargerElement(vector<long long> arr, int n){
@@ -32,8 +34,8 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 
 ## Approach 1.2 : Stack (Minor changes)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<long long> nextLargerElement(vector<long long> arr, int n){
@@ -60,8 +62,8 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 
 ## Approach 1.3 : Stack (Minor changes)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<long long> nextLargerElement(vector<long long> arr, int n){
@@ -80,8 +82,8 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 
 ## Approach 1.5 : Stack (Minor changes)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 // Index based
@@ -101,8 +103,8 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 
 ## Approach 1.5 : Stack (Minor changes)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<long long> nextLargerElement(vector<long long> arr, int n){
@@ -122,8 +124,8 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 
 ## Approach 1.6 : Stack (Minor changes)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<long long> nextLargerElement(vector<long long> arr, int n){
@@ -150,12 +152,12 @@ vector<long long> nextLargerElement(vector<long long> arr, int n){
 
 ## Problem statement 
 
-- Find next greater element on the right for every elements. 
+Find next greater element on the right for every elements. 
 
 ## Approach 1.1 : Stack
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<long long> nextLargerElementToLeft(vector<long long> arr, int n){
@@ -174,8 +176,8 @@ vector<long long> nextLargerElementToLeft(vector<long long> arr, int n){
 
 ## Approach 1.2 Stack (Minor changes)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<long long> nextLargerElementToLeft(vector<long long> arr, int n){

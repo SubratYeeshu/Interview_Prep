@@ -2,13 +2,15 @@
 
 ## Problem statement
 
-- Given two integer array A and B of size N each. A sum combination is made by adding one element from array A and another element of array B. Return the maximum K valid sum combinations from all the possible sum combinations. Note : Output array must be sorted in non-increasing order.
+Given two integer array A and B of size N each. A sum combination is made by adding one element from array A and another element of array B. 
+
+Return the maximum K valid sum combinations from all the possible sum combinations. Note : Output array must be sorted in non-increasing order.
 
 
 ## Approach 1 : Brute 
 
-Time complexity : O(N^2) 
-Space complexity : O(N)
+- Time complexity : O(N^2) 
+- Space complexity : O(N)
 
 ```cpp
 vector<int> maxCombinations(int N, int C, vector<int> &A, vector<int> &B) {
@@ -42,8 +44,8 @@ vector<int> maxCombinations(int N, int C, vector<int> &A, vector<int> &B) {
 
 ## Approach 2 : Optimal 
 
-Time complexity : O(NLogN) 
-Space complexity : O(1)
+- Time complexity : O(NLogN) 
+- Space complexity : O(1)
 
 ```cpp
 vector<int> maxCombinations(int N, int C, vector<int> &A, vector<int> &B) {

@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
+Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
 
 ## Approach 1 : Stack + (Area under histrogram)
 
-Time complexity : O(N^2)  
-Space complexity : O(N^2)
+- Time complexity : O(N^2)  
+- Space complexity : O(N^2)
 
 ```cpp
 vector<int> getNextSmaller(vector<int> &nums){
@@ -92,8 +92,8 @@ int maximalRectangle(vector<vector<char>>& matrix) {
 
 ## Approach 1.2 : Stack + (Area under histogram)
 
-Time complexity : O(N^2)  
-Space complexity : O(N)
+- Time complexity : O(N^2)  
+- Space complexity : O(N)
 
 ```cpp
 vector<int> getNextSmaller(vector<int> &nums){

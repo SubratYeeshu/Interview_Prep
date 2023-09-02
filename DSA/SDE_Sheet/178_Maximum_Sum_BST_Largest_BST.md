@@ -1,8 +1,8 @@
 ## Maximum Sum BST / Largest BST
 
-## Problem statement
-
 ## Variant 1 : Maximum Sum BST
+
+## Problem statement
 
 Given a binary tree root, return the maximum sum of all keys of any sub-tree which is also a Binary Search Tree (BST).
 
@@ -11,8 +11,6 @@ Assume a BST is defined as follows:
 - The left subtree of a node contains only nodes with keys less than the node's key.
 - The right subtree of a node contains only nodes with keys greater than the node's key.
 - Both the left and right subtrees must also be binary search trees.
-
-## Variant 1 : Maximum Sum BST in Binary Tree
 
 ## Approach 1 : Brute
 
@@ -123,6 +121,8 @@ public:
 ```
 
 ## Variant 2 : Largest BST
+
+## Problem statement
 
 Given a binary tree. Find the size of its largest subtree that is a Binary Search Tree.
 

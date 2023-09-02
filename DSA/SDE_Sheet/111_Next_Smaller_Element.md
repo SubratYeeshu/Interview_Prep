@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Given an array a of integers of length n, find the nearest smaller number for every element such that the smaller element is on left side.If no small element present on the left print -1.
+Given an array a of integers of length n, find the nearest smaller number for every element such that the smaller element is on left side.If no small element present on the left print -1.
 
 ## Approach 1 : Stack (Left Smaller)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<int> leftSmaller(int n, int arr[]){
@@ -32,8 +32,8 @@ vector<int> leftSmaller(int n, int arr[]){
 
 ## Approach 1 : Stack (Right Smaller)
 
-Time complexity : O(N)  
-Space complexity : O(N)
+- Time complexity : O(N)  
+- Space complexity : O(N)
 
 ```cpp
 vector<int> leftSmaller(int n, int arr[]){

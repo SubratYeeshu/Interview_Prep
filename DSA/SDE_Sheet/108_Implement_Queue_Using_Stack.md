@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- Implement a queue data structure using stack 
+Implement a queue data structure using stack 
 
-## Approach 1 :
+## Approach 1 : Two Queues
 
-Time complexity : O(N) 
-Space complexity : O(2N)
+- Time complexity : O(N) 
+- Space complexity : O(2N)
 
 ```cpp
 class Queue {
@@ -33,10 +33,10 @@ public:
 };
 ```
 
-## Approach 2 :
+## Approach 2 : Two Queues + Amortised
 
-Time complexity : O(1) Amortised (Most cases) 
-Space complexity : O(2N)
+- Time complexity : O(1) Amortised (Most cases) 
+- Space complexity : O(2N)
 
 ```cpp
 class Queue {

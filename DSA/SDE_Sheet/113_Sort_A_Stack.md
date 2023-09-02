@@ -2,12 +2,12 @@
 
 # Problem statement 
 
-- Given a stack, the task is to sort it such that the top of the stack has the greatest element.
+Given a stack, the task is to sort it such that the top of the stack has the greatest element.
 
 ## Approach 1 : Stack
 
-Time complexity : O(N^2)  
-Space complexity : O(1)
+- Time complexity : O(N^2)  
+- Space complexity : O(1)
 
 ```cpp
 void insert_helper(stack<int> &st, int element){

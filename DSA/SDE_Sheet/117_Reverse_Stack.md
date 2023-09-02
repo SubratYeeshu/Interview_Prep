@@ -2,12 +2,12 @@
 
 ## Problem statement
 
-- You are given a stack St. You have to reverse the stack using recursion.
+You are given a stack St. You have to reverse the stack using recursion.
 
 # Approach 1 : Using queue
 
-Time complexity : O(N) 
-Space complexity : O(N)
+- Time complexity : O(N) 
+- Space complexity : O(N)
 
 ```cpp
 queue<int>ans;
@@ -32,8 +32,8 @@ void Reverse(stack<int> &St){
 
 ## Approach 2 : Recursion stack 
 
-Time complexity : O(N) 
-Space complexity : O(1)
+- Time complexity : O(N) 
+- Space complexity : O(1)
 
 ```cpp
 void insert_at_bottom(stack<int>& st, int element){

@@ -15,8 +15,8 @@ You must implement a solution with O(1) time complexity for each function.
 
 ## Approach 1.1 : Using two stacks
 
-Time complexity : O(1) 
-Space complexity : O(N)
+- Time complexity : O(1) 
+- Space complexity : O(N)
 
 ```cpp
 stack<int> regularStack;
@@ -53,8 +53,8 @@ int getMin() {
 
 ## Approach 1.2 : Using stack with pair
 
-Time complexity : O(1) 
-Space complexity : O(N)
+- Time complexity : O(1) 
+- Space complexity : O(N)
 
 ```cpp
 stack<pair<int,int>>st;
@@ -85,10 +85,10 @@ int getMin() {
 }
 ```
 
-## Approach 2 : Using stack 
+## Approach 2 : Using stack + Marker (2x - min)
 
-Time complexity : O(1) 
-Space complexity : O(1)
+- Time complexity : O(1) 
+- Space complexity : O(1)
 
 ```cpp
 

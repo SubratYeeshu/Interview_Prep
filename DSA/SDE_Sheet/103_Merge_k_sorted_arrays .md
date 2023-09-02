@@ -2,12 +2,12 @@
 
 ## Problem stateent 
 
-- Given K sorted arrays arranged in the form of a matrix of size K*K. The task is to merge them into one sorted array.
+Given K sorted arrays arranged in the form of a matrix of size K*K. The task is to merge them into one sorted array.
 
 ## Approach 1 : Brute 
 
-Time complexity : O(N^2) 
-Space complexity : O(N)
+- Time complexity : O(N^2) 
+- Space complexity : O(N)
 
 ```cpp
 typedef pair<int, pair<int, int>> info;
@@ -35,8 +35,8 @@ vector<int> mergeKArrays(vector<vector<int>> arr, int K){
 
 ## Approach 2 : Priority Queue 
 
-Time complexity : O(NLogK) 
-Space complexity : O(N)
+- Time complexity : O(NLogK) 
+- Space complexity : O(N)
 
 ```cpp
 typedef pair<int, pair<int, int>> info;
@@ -64,8 +64,8 @@ vector<int> mergeKArrays(vector<vector<int>> arr, int K){
 
 ## Approach 3.1 : Priority Queue (Using class (Pointers to node)) 
 
-Time complexity : O(NLogK) 
-Space complexity : O(N)
+- Time complexity : O(NLogK) 
+- Space complexity : O(N)
 
 ```cpp
 class node{
@@ -124,8 +124,8 @@ class Solution{
 
 ## Approach 3.2 : Priority Queue (Using class (Node directly)) 
 
-Time complexity : O(NLogK) 
-Space complexity : O(N)
+- Time complexity : O(NLogK) 
+- Space complexity : O(N)
 
 ```cpp
 //User function Template for C++

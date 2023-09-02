@@ -4,6 +4,7 @@
 
 Design and implement a data structure for a Least Frequently Used (LFU) cache.
 Implement the LFUCache class:
+
 - LFUCache(int capacity) Initializes the object with the capacity of the data structure.
 - int get(int key) Gets the value of the key if the key exists in the cache. Otherwise, returns -1.
 - void put(int key, int value) Update the value of the key if present, or inserts the key if not already present. When the cache reaches its capacity, it should invalidate and remove the least frequently used key before inserting a new item. For this problem, when there is a tie (i.e., two or more keys with the same frequency), the least recently used key would be invalidated.
@@ -11,8 +12,8 @@ To determine the least frequently used key, a use counter is maintained for each
 
 ## Approach 1 : 
 
-Time complexity : O(1) 
-Space complexity : O(N)
+- Time complexity : O(1) 
+- Space complexity : O(N)
 
 ```cpp
 class LFUCache {
