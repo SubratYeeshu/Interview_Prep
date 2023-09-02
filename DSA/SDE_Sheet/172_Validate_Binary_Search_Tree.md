@@ -63,29 +63,38 @@ bool isValidBST(TreeNode* root) {
 - Space complexity : O(LogN)
 
 ```cpp
-BSTInfo* solve(TreeNode* root){
-    if(!root){
-        BSTInfo* temp = new BSTInfo();
-        temp -> mini = LONG_MAX;
-        temp -> maxi = LONG_MIN;
-        temp -> isBST = true;
-        return temp;
+class BSTInfo {
+    public:
+    long long mini;
+    long long maxi;
+    bool isBST;
+};
+class Solution {
+public:
+    BSTInfo* solve(TreeNode* root){
+        if(!root){
+            BSTInfo* temp = new BSTInfo();
+            temp -> mini = LONG_MAX;
+            temp -> maxi = LONG_MIN;
+            temp -> isBST = true;
+            return temp;
+        }
+        
+        BSTInfo* leftInfo = solve(root->left);
+        BSTInfo* rightInfo =  solve(root->right);
+        
+        long long currNodeData = root -> val;
+        BSTInfo* toReturnInfo = new BSTInfo();
+        toReturnInfo -> isBST = leftInfo -> isBST && rightInfo -> isBST 
+            && currNodeData > leftInfo -> maxi && currNodeData < rightInfo -> mini;
+        toReturnInfo -> mini = min(leftInfo -> mini, min(rightInfo -> mini, currNodeData));
+        toReturnInfo -> maxi = max(leftInfo -> maxi, max(rightInfo -> maxi, currNodeData));
+        
+        return toReturnInfo;
     }
     
-    BSTInfo* leftInfo = solve(root->left);
-    BSTInfo* rightInfo =  solve(root->right);
-    
-    long long currNodeData = root -> val;
-    BSTInfo* toReturnInfo = new BSTInfo();
-    toReturnInfo -> isBST = leftInfo -> isBST && rightInfo -> isBST 
-        && currNodeData > leftInfo -> maxi && currNodeData < rightInfo -> mini;
-    toReturnInfo -> mini = min(leftInfo -> mini, min(rightInfo -> mini, currNodeData));
-    toReturnInfo -> maxi = max(leftInfo -> maxi, max(rightInfo -> maxi, currNodeData));
-    
-    return toReturnInfo;
-}
-
-bool isValidBST(TreeNode* root) {
-    return solve(root) -> isBST;
-}
+    bool isValidBST(TreeNode* root) {
+        return solve(root) -> isBST;
+    } 
+};
 ```

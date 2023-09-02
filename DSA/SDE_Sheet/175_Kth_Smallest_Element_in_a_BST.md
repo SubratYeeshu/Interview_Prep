@@ -34,7 +34,7 @@ int kthSmallest(TreeNode* root, int k) {
 int ans = 0;
     void dfsInorder(TreeNode* root, int &k) {
     if (!root) return;
-    dfsInorder(root->left, k);
+    dfsInorder(root->left, k);  // First call for kth largest
     if (--k == 0){
         ans = root->val;
         return;
