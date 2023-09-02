@@ -8,8 +8,8 @@ Note:- In an inorder traversal the number just smaller than the target is the pr
 
 ## Approach 1 : Inorder Traversal of BST is sorted
 
-- Time complexity : O(LogN)
-- Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(N)
 
 ```cpp
 void inorder(Node *root, vector<Node*> &res){
@@ -36,7 +36,7 @@ void findPreSuc(Node* root, Node*& pre, Node*& suc, int target){
 
 ## Approach 2 : Recursive + BST Property
 
-- Time complexity : O(LogN)
+- Time complexity : O(N)
 - Space complexity : O(LogN)
 
 ```cpp
@@ -71,8 +71,8 @@ void findPreSuc(Node* root, Node*& pre, Node*& suc, int key){
 
 ## Approach 3 : Recursive + BST Property
 
-- Time complexity : O(LogN)
-- Space complexity : O(LogN)
+- Time complexity : O(N)
+- Space complexity : O(1)
 
 ```cpp
 Node* findPre(Node* root){
@@ -102,7 +102,7 @@ void findPreSuc(Node* root, Node*& pre, Node*& suc, int key){
         return;
     }
     
-    // Key larget search in right subtree
+    // Key larger search in right subtree
     if(key > root -> key){
         pre = root;
         findPreSuc(root -> right, pre, suc, key);
