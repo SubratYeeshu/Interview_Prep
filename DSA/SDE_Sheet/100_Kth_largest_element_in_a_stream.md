@@ -8,8 +8,8 @@ Return a list of size n after all insertions.
 
 ## Approach 1 : Priority Queue
 
-- Time complexity : O(NLogN) 
-- Space complexity : O(1)
+- Time complexity : O(NLogK) 
+- Space complexity : O()
 
 ```cpp
 vector<int> kthLargest(int k, int arr[], int n) {
@@ -32,5 +32,25 @@ vector<int> kthLargest(int k, int arr[], int n) {
     }
     
     return res;
+}
+```
+
+## Leetcode Version
+
+```cpp
+int size = 0;
+priority_queue<int, vector<int>, greater<int>>pq;
+KthLargest(int k, vector<int>& nums) {
+    size = k;
+    for(int i = 0 ; i < nums.size() ; i++){
+        pq.push(nums[i]);
+        if(pq.size() > k)pq.pop();
+    }
+}
+
+int add(int val) {
+    pq.push(val);
+    if(pq.size() > size)pq.pop();
+    return pq.top();
 }
 ```

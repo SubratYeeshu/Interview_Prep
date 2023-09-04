@@ -12,6 +12,9 @@ Basically, the deletion can be divided into two stages:
 
 ## Approach 1 : Implementation
 
+- Time complexity : O(N)
+- Space complexity : O(LogN)
+
 ```cpp
 /*
 
