@@ -4,7 +4,7 @@
 
 Given a unweighted graph find the shortest path of all node from source S in linear time (not logarithmic - Dijkstra)
 
-## Approach 1 : BFS
+## Approach 1.1 : BFS
 
 - Time Complexity : O(V + E) 
 - Auxiliary Space: O(V)
@@ -64,4 +64,51 @@ int main() {
 
 	return 0; 
 } 
+```
+
+## Approach 1.2 : BFS + Printing
+
+- Time Complexity : O(V + E) 
+- Auxiliary Space: O(V)
+
+```cpp
+vector<int> shortestPath( vector<pair<int,int>> edges , int n , int m, int s , int t){ vector<int>adjList[n+1];
+
+   for(int i=0;i<edges.size();i++){
+        adjList[edges[i].first].push_back(edges[i].second);        
+        adjList[edges[i].second].push_back(edges[i].first);
+    }
+
+      queue<pair<int, int>> pq;
+      vector<int>dist(n+1, 1e9); // shortest distance vector    
+      dist[s] = 0;
+      vector<int>path(n+1, 1); // to store shortest paths  
+
+      for(int i=1;i<=n;i++)path[i] = i; 
+
+      vector<int>ans; //to store ans path  
+      pq.push({0,s});
+	  
+	  while(pq.size()!=0){  
+		int node = pq.front().second; 
+		int dis = pq.front().first;
+		pq.pop(); 
+		for(auto it : adjList[node]){ 
+			if(dis+1<dist[it]){   
+				dist[it] = dis+1;  
+				path[it] = node;  
+				pq.push({dist[it],it});
+			}
+		}
+	}
+
+	int dest = t;
+	while(path[dest]!=dest){ 
+		ans.push_back(dest);   
+		dest = path[dest]; 
+	}
+	ans.push_back(s);  
+	reverse(ans.begin(),ans.end());   
+	return ans; 
+}  
 ```

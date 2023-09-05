@@ -4,9 +4,11 @@
 
 Given a weighted, undirected and connected graph of V vertices and an adjacency list adj where adj[i] is a list of lists containing two integers where the first integer of each list j denotes there is edge between i and j , second integers corresponds to the weight of that  edge . You are given the source vertex S and You to Find the shortest distance of all the vertex's from the source vertex S. You have to return a list of integers denoting shortest distance between each node and Source vertex S.
 
-## Note : Dijkstra never works for negative weight / negative cycle infinite loop
+## Note 
 
-## If we use queue there would have been uneccessary longer paths discovered which will take extra time
+- Dijkstra never works for negative weight / negative cycle infinite loop
+- If we use queue there would have been uneccessary longer paths discovered which will take extra time
+- TC : O(V \* (Pop Vertex from min heap + Number of edges \* push into min heap)), O(V \* (log(heapsize) \* ne \* log(heapsize))), E = V^2
 
 ## Approach 1 : Priority Queue
 
