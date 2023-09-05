@@ -55,7 +55,7 @@ bool topoSort(int V, vector<int> adj[]){
         if(indeg[i] == 0)
             q.push(i);
     
-    
+    // Queue becomes empty if cycle is present without discovering every nodes
     while(!q.empty()){
         int node = q.front();
         q.pop();

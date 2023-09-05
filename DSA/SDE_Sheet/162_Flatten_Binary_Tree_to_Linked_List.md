@@ -25,6 +25,29 @@ TreeNode *prev = NULL;
 }
 ```
 
+## Approach 2 : Stack 
+
+- Time complexity : O(N)
+- Space complexity : O(LogN)
+
+```cpp
+void flatten(TreeNode* root) {
+    if(!root) return; 
+    stack<TreeNode*> st; 
+    st.push(root);
+    
+    while(!st.empty()) {
+        TreeNode* cur = st.top(); 
+        st.pop(); 
+        
+        if(cur -> right != NULL)st.push(cur -> right); 
+        if(cur -> left != NULL)st.push(cur -> left); 
+        if(!st.empty())cur -> right = st.top(); 
+        cur -> left = NULL;
+    }
+}
+```
+
 ## Approach 2 : Implementation
 
 - Time complexity : O(N)
