@@ -4,7 +4,7 @@
 
 Given a connected undirected graph. Perform a Depth First Traversal of the graph.
 
-## Approach 1 : 
+## Approach 1 : DFS
 
 - Time complexity : O(N)  
 - Auxiliary space : O(N)
