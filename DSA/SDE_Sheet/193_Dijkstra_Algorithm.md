@@ -6,6 +6,8 @@ Given a weighted, undirected and connected graph of V vertices and an adjacency 
 
 ## Note : Dijkstra never works for negative weight / negative cycle infinite loop
 
+## If we use queue there would have been uneccessary longer paths discovered which will take extra time
+
 ## Approach 1 : Priority Queue
 
 - Time complexity : O(ELogV)  
