@@ -6,8 +6,8 @@ Given a Directed Graph with V vertices (Numbered from 0 to V-1) and E edges, che
 
 ## Approach 1 : DFS
 
-- Time complexity : O(N + 2E) ~ Total N nodes, 2E neighbours undirected
-- Space complexity : O(N)
+- Time complexity : O(N + E) ~ Total N nodes, 2E neighbours undirected
+- Space complexity : O(2N)
 
 ```cpp
 bool isCycleDFS(int node, vector<int> adj[], vector<int> &vis, vector<int> &pathVis){
