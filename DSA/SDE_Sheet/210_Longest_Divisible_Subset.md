@@ -11,6 +11,9 @@ If there are multiple solutions, return any of them.
 
 ## Approach 1 : Sorting + LIS (Variation)
 
+- Time complexity : O(NLogN)
+- Space complexity : O(N)
+
 ```cpp
 /*
     
