@@ -35,7 +35,7 @@ int longestCommonSubsequence(string text1, string text2) {
 }
 ```
 
-## Approach 2 : Memoization
+## Approach 2.1 : Memoization (Index from start)
 
 - Time complexity : O(m \* n)
 - Space complexity : O(m \* n)
@@ -60,5 +60,140 @@ int longestCommonSubsequence(string text1, string text2) {
     int n = text1.size(), m = text2.size();
     vector<vector<int>> dp (n + 1, vector<int> (m + 1, -1));
     return solve(0, 0, text1, text2, dp);
+}
+```
+
+## Approach 2.2 : Memoization (Index from end)
+
+- Time complexity : O(m \* n)
+- Space complexity : O(m \* n)
+
+```cpp
+int solve(int i, int j, string &str1, string &str2, vector<vector<int>> &dp){
+    if(i < 0 || j < 0)return 0;
+    
+    if(dp[i][j] != -1)return dp[i][j];
+    
+    if(str1[i] == str2[j]){
+        return dp[i][j] = 1 + solve(i - 1, j - 1, str1, str2, dp);
+    }else{
+        return dp[i][j] = max(solve(i - 1, j, str1, str2, dp), solve(i, j - 1, str1, str2, dp));
+    }
+    
+}
+
+int longestCommonSubsequence(string text1, string text2) {
+    int n = text1.size(), m = text2.size();
+    vector<vector<int>> dp (n + 1, vector<int> (m + 1, -1));
+    return solve(n - 1, m - 1, text1, text2, dp);
+}
+```
+
+## Approach 2.3 : Memoization (Index from end) + Shifting of index
+
+- Time complexity : O(m \* n)
+- Space complexity : O(m \* n)
+
+```cpp
+// Shift index by 1 because -1 cant be accessed
+int solve(int i, int j, string &str1, string &str2, vector<vector<int>> &dp){
+    if(i == 0 || j == 0)return 0;
+    
+    if(dp[i][j] != -1)return dp[i][j];
+    
+    if(str1[i - 1] == str2[j - 1]){
+        return dp[i][j] = 1 + solve(i - 1, j - 1, str1, str2, dp);
+    }else{
+        return dp[i][j] = max(solve(i - 1, j, str1, str2, dp), solve(i, j - 1, str1, str2, dp));
+    }
+    
+}
+
+int longestCommonSubsequence(string text1, string text2) {
+    int n = text1.size(), m = text2.size();
+    vector<vector<int>> dp (n + 1, vector<int> (m + 1, -1));
+            
+    return solve(n, m, text1, text2, dp);
+}
+```
+
+## Approach 3.1 : Tabulation (Index from start) Bottom Up
+
+- Time complexity : O(m \* n)
+- Space complexity : O(m \* n)
+
+```cpp
+// For tabulation dp[i][j] represents the LCS when length of str1 is i and length of str2 is j
+int longestCommonSubsequence(string text1, string text2) {
+    int n = text1.size(), m = text2.size();
+    
+    // if(i == 0 || j == 0)return 0;
+    vector<vector<int>> dp (n + 1, vector<int> (m + 1, 0));
+    
+    // i and j denotes respective lengths
+    for(int i = 1 ; i < n + 1 ; i++){
+        for(int j = 1 ; j < m + 1 ; j++){
+            if(text1[i - 1] == text2[j - 1]){
+                dp[i][j] = 1 + dp[i - 1][j - 1];
+            }else{
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    
+    return dp[n][m];
+}
+```
+
+## Printing The LCS
+
+- Time complexity : O(m \* n)
+- Space complexity : O(m \* n)
+
+```cpp
+int longestCommonSubsequence(string text1, string text2) {
+    int n = text1.size(), m = text2.size();
+
+    // if(i == 0 || j == 0)return 0;
+    vector<vector<int>> dp (n + 1, vector<int> (m + 1, 0));
+
+    // i and j denotes respective lengths
+    for(int i = 1 ; i < n + 1 ; i++){
+        for(int j = 1 ; j < m + 1 ; j++){
+            if(text1[i - 1] == text2[j - 1]){
+                dp[i][j] = 1 + dp[i - 1][j - 1];
+            }else{
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+
+    for(auto i : dp){
+        for(auto j : i){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+
+    int i = n, j = m;
+    string lcs = "";  // Initialize the LCS string
+
+    while (i > 0 && j > 0) {
+        if (text1[i - 1] == text2[j - 1]) {
+            lcs += text1[i - 1] + lcs;  // Prepend the character to LCS
+            i--;
+            j--;
+        } else {
+            if (dp[i - 1][j] > dp[i][j - 1]) {
+                i--;
+            } else {
+                j--;
+            }
+        }
+    }
+    
+    cout << lcs;
+    
+    return dp[n][m];
 }
 ```
