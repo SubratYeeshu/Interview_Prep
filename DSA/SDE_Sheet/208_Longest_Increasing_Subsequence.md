@@ -4,6 +4,12 @@
 
 Given an integer array nums, return the length of the longest strictly increasing subsequence.
 
+## Pattern : LIS
+
+- To solve question that are related to LIS
+- Try to think after sorting if the sequence does not matter
+- Instead of (nums[index] > nums[prev]) there may be other function or condition 
+
 ## Approach 1.1 : Brute + Prev Element
 
 - Time complexity : O(2^N)
@@ -99,7 +105,7 @@ int lengthOfLIS(vector<int>& nums) {
 }
 ```
 
-## Approach 2 : Tabulation
+## Approach 2.1 : Tabulation
 
 - Time complexity : O(N^2)
 - Space complexity : O(N)
@@ -121,6 +127,32 @@ int lengthOfLIS(vector<int>& nums) {
     return maxi;
 }
 ```
+
+## Approach 2.2 : Tabulation + Standard LIS
+
+- Time complexity : O(N^2)
+- Space complexity : O(N)
+
+```cpp
+int lengthOfLIS(vector<int>& nums) {
+    int n = nums.size(), maxi = 1;
+    vector<int> dp (n + 1, 1);
+
+    for(int index = 0 ; index < n ; index++){
+        for(int prev = 0 ; prev < index ; prev++){
+            if(nums[index] > nums[prev]){  // Can use different comparator function according to different variants of LIS
+                if(1 + dp[prev] > dp[index]){
+                    dp[index] = 1 + dp[prev];
+                }
+            }
+        }
+        maxi = max(maxi, dp[index]);
+    }
+
+    return maxi;
+}
+```
+
 
 ## Printing The LIS
 
