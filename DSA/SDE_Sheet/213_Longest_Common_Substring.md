@@ -34,8 +34,8 @@ int longestCommonSubstr(string S1, string S2, int n, int m){
 
 ## Approach 2 : LCS (Recursive)
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 int solve(int i, int j, int n, int m, string &s1, string &s2,vector<vector<int>>&dp){
@@ -67,8 +67,8 @@ int lcs(string &str1, string &str2){
 
 ## Approach 3.1 : LCS (Modification) + Tabulation
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 int dp[1001][1001];
@@ -113,8 +113,8 @@ int longestCommonSubstr (string S1, string S2, int n, int m)
 
 ## Approach 3.2 : LCS (Modification) + Tabulation + Short code
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 int longestCommonSubstr(string S1, string S2, int n, int m){

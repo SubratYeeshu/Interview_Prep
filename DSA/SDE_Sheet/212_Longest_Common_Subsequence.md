@@ -10,6 +10,12 @@ A subsequence of a string is a new string generated from the original string wit
 
 A common subsequence of two strings is a subsequence that is common to both strings.
 
+## Pattern : DP on Strings
+
+- Think of using LCS when two strings are given
+- And we are asked to make it palindrome, number of occurences 
+- These type of questions where two strings can be involved and TC is becoming exponential
+
 ## Approach 1 : Brute
 
 - Time complexity : O(2^n\*2^m) ~ O(2^<sup>(m + n)</sup>)
@@ -37,8 +43,8 @@ int longestCommonSubsequence(string text1, string text2) {
 
 ## Approach 2.1 : Memoization (Index from start)
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 int solve(int i, int j, string &str1, string &str2, vector<vector<int>> &dp){
@@ -65,8 +71,8 @@ int longestCommonSubsequence(string text1, string text2) {
 
 ## Approach 2.2 : Memoization (Index from end)
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 int solve(int i, int j, string &str1, string &str2, vector<vector<int>> &dp){
@@ -91,8 +97,8 @@ int longestCommonSubsequence(string text1, string text2) {
 
 ## Approach 2.3 : Memoization (Index from end) + Shifting of index
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 // Shift index by 1 because -1 cant be accessed
@@ -117,10 +123,10 @@ int longestCommonSubsequence(string text1, string text2) {
 }
 ```
 
-## Approach 3.1 : Tabulation (Index from start) Bottom Up
+## Approach 3.1 : Tabulation (Index from start) Bottom Up + Standard LCS
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 // For tabulation dp[i][j] represents the LCS when length of str1 is i and length of str2 is j
@@ -147,8 +153,8 @@ int longestCommonSubsequence(string text1, string text2) {
 
 ## Printing The LCS
 
-- Time complexity : O(m \* n)
-- Space complexity : O(m \* n)
+- Time complexity : O(M \* N)
+- Space complexity : O(M \* N)
 
 ```cpp
 int longestCommonSubsequence(string text1, string text2) {

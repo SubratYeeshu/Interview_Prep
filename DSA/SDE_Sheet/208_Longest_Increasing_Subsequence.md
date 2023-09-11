@@ -4,7 +4,7 @@
 
 Given an integer array nums, return the length of the longest strictly increasing subsequence.
 
-## Pattern : LIS
+## Pattern : DP on LIS
 
 - To solve question that are related to LIS
 - Try to think after sorting if the sequence does not matter
