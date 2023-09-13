@@ -1,4 +1,4 @@
-# Largest subarray with 0 sum
+# Largest subarray with K sum
 
 ## Problem statement
 
