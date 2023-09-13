@@ -19,8 +19,8 @@ Note: The answer can be large, so return it with modulo 1003
 
 ## Approach 1 : DP
 
-Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
-Space Complexity : O(N^2 + Rec)
+- Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N^2 + Rec)
 
 ```cpp
 int mod = 1003;

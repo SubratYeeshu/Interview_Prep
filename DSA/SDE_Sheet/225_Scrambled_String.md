@@ -17,8 +17,8 @@ Print "Yes" if S2 is a scrambled form of S1 otherwise print "No".
 
 ## Approach 1 : DP
 
-Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
-Space Complexity : O(N^2 + Rec)
+- Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N^2 + Rec)
 
 ```cpp
 // Recursively break at each index from i = 1 -> n - 1, and check if ther are scrambeled or not

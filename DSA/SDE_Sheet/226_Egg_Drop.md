@@ -17,8 +17,8 @@ Return the minimum number of moves that you need to determine with certainty wha
 
 ## Approach 1.1 : DP
 
-Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
-Space Complexity : O(N^2 + Rec)
+- Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N^2 + Rec)
 
 ```cpp
 int dropEgg(int e, int f, vector<vector<int>> &dp){ // e stands for egg while f for floor
@@ -44,8 +44,8 @@ int eggDrop(int e, int f){
 
 ## Approach 1.2 : DP (Optimized Calls)
 
-Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
-Space Complexity : O(N^2 + Rec)
+- Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N^2 + Rec)
 
 ```cpp
 int helper(int k, int n, vector<vector<int>>& memo){
@@ -88,8 +88,8 @@ int superEggDrop(int k, int n) {
 
 ## Approach 2 : Tabulation
 
-Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
-Space Complexity : O(N^2)
+- Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N^2)
 
 ```cpp
 int eggDrop(int egg, int floorVal) {
@@ -120,8 +120,8 @@ int eggDrop(int egg, int floorVal) {
 
 ## Approach 3 : Binary Search 
 
-Time Complexity : O(N \* K \* LogN) ~ Inner Loop Contibutes a N
-Space Complexity : O(N \* K)
+- Time Complexity : O(N \* K \* LogN) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N \* K)
 
 ```cpp
 int helper(int k, int n, vector<vector<int>>& memo){

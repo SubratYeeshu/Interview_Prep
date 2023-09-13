@@ -14,8 +14,8 @@ Return the minimum total cost of the cuts.
 
 ## Approach 1 : DP
 
-Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
-Space Complexity : O(N^2 + Rec)
+- Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N^2 + Rec)
 
 ```cpp
 // If cuts are sorted than only it will work because they become independent after cuts
@@ -48,8 +48,8 @@ int minCost(int n, vector<int>& cuts) {
 
 ## Approach 2 : Tabulation
 
-Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
-Space Complexity : O(N^2)
+- Time Complexity : O(N^3) ~ Inner Loop Contibutes a N
+- Space Complexity : O(N^2)
 
 ```cpp
 // If cuts are sorted than only it will work because they become independent after cuts

@@ -8,8 +8,8 @@ In other words, given two integer arrays val[0..N-1] and wt[0..N-1] which repres
 
 ## Approach 1 : DP + (Index From Start)
 
-Time Complexity : O(N^2) 
-Space Complexity : O(N^2 + Rec)
+- Time Complexity : O(N^2) 
+- Space Complexity : O(N^2 + Rec)
 
 ```cpp
 int solve(int index, int wt[], int val[], int W, int n, vector<vector<int>> &dp){
@@ -36,8 +36,8 @@ int knapSack(int W, int wt[], int val[], int n){
 
 ## Approach 2 : DP + (Index From End For Tabulation)
 
-Time Complexity : O(N^2) 
-Space Complexity : O(N^2 + Rec)
+- Time Complexity : O(N^2) 
+- Space Complexity : O(N^2 + Rec)
 
 ```cpp
 int solve(int n, int W, int wt[], int val[], vector<vector<int>> &dp){
@@ -61,8 +61,8 @@ int knapSack(int W, int wt[], int val[], int n){
 
 ## Approach 3 : Tabulation (Base Case Conversion -> Write All Changing Params -> Copy Recurrence)
 
-Time Complexity : O(N^2) 
-Space Complexity : O(N^2)
+- Time Complexity : O(N^2) 
+- Space Complexity : O(N^2)
 
 ```cpp
 int knapSack(int W, int wt[], int val[], int n){ 
