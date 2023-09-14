@@ -8,6 +8,10 @@ Given the two integers m and n, return the number of possible unique paths that 
 
 The test cases are generated so that the answer will be less than or equal to 2 * 109.
 
+## Note : 
+- In questions where we are only going down and down not return back in any case we can use DP but cases like 4 direction movement where we have to use backtracking sometime for avoiding infinite loop think of Dijkstra type algorithm because backtrack with DP can break the questions or the input.
+- Or we can also say DP stores the answer of solved part, when we use backtracking it might gives wrong answer because the stored values are changed and the answer might differ
+
 ## Approach 1.1 : DP + (Index From Start)
 
 - Time Complexity : O(M \* N) 
