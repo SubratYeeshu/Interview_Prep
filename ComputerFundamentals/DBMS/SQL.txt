@@ -1,0 +1,12 @@
+Commands  
+
+AS, alias
+IS NULL / NOT NULL
+ORDER BY coloumn_name ASC / DESC
+SELECT DISTINCT
+
+JOINS
+INNER JOIN
+
+ON clause is used for specifying the conditions of how tables are joined and is specific to the join operation.
+WHERE clause is used for filtering rows in the result set based on various conditions and is applied to the entire result set.
